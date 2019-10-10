@@ -1,0 +1,3261 @@
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix kgc:   <http://kgc.knowledge-graph.jp/ontology/kgc.owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/notSay>
+        a           kgc:NotAction , kgc:Action ;
+        rdfs:label  "notSay"@en ;
+        kgc:Not     <http://kgc.knowledge-graph.jp/data/predicate/say> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/serious>
+        a           kgc:Property ;
+        rdfs:label  "serious"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/nightwear>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "nightwear"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/handcuffs>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "handcuffs"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/129>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notExist> ;
+        kgc:source        "There is no flow of candles"@en , "ローソクの流れ跡がない"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Traces_of_candles> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/190>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/put> ;
+        kgc:source        "Martin handcuffs Abe_Slaney"@en , "マーティン警部はエイブ・スレイニに手錠をはめた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Martin> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:time          "1903-08-06T16:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/handcuffs> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/003>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/tall> ;
+        kgc:source       "Qubit is tall"@en , "キュービットの背は高い"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/Exist>
+        a           kgc:Object ;
+        rdfs:label  "Exist"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/Moved>
+        a           kgc:Object ;
+        rdfs:label  "Moved"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/live>
+        a           kgc:Action ;
+        rdfs:label  "live"@en .
+
+<http://kgc.knowledge-graph.jp/data/Board_2>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Board 2"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/money>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "money"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/160>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:left          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_X> ;
+        kgc:right         <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_X> ;
+        kgc:source        "The Dancing dolls X has E at both ends"@en , "踊る人形Xは両端にEを持つ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_X> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/E> .
+
+kgc:because  a              owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:RelationBetweenScene .
+
+<http://kgc.knowledge-graph.jp/data/Elsie>
+        a           kgc:Person ;
+        rdfs:label  "Elsie"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/beDancing>
+        a           kgc:Action ;
+        rdfs:label  "beDancing"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Qubit>
+        a           kgc:Object ;
+        rdfs:label  "Qubit"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/130>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/open> ;
+        kgc:source        "At the time of the incident, the window is open"@en , "事件当時、窓は開いていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/window> ;
+        kgc:time          "1903-08-06T03:00:00"^^xsd:dateTime ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/gunfire> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/045>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/come> ;
+        kgc:source        "Qubit visits Holmes"@en , "キュービットはホームズを訪ねた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-08-03T10:00:00"^^xsd:dateTime ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/notSend>
+        a           kgc:NotAction , kgc:Action ;
+        rdfs:label  "notSend"@en ;
+        kgc:Not     <http://kgc.knowledge-graph.jp/data/predicate/send> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/226>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/fall> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Qubit falls"@en , "キュービットは倒れた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/227> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/100>
+        a                 kgc:Situation ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/097> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/come> ;
+        kgc:source        "Maid come to the study room"@en , "女中は書斎に行った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Maid> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/study_room> .
+
+<http://kgc.knowledge-graph.jp/data/Signs_of_evil>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Signs of evil"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Signs> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/evil> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/015>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:source        "Qubit say the followings"@en , "キュービットは以下を言った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/018> , <http://kgc.knowledge-graph.jp/data/DancingMen/017> , <http://kgc.knowledge-graph.jp/data/DancingMen/016> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/Know>
+        a           kgc:Object ;
+        rdfs:label  "Know"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/getOut>
+        a           kgc:Action ;
+        rdfs:label  "getOut"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/pencil>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "pencil"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/heart>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "heart"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/172>
+        a                 kgc:Situation ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/170> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "The Sentence H means 'Am Here Abe Slaney'"@en , "文章Hは'Am Here Abe Slaney'を意味する"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_H> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Am_Here_Abe_Slaney> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/087>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/permit> ;
+        kgc:source        "Martin permits Holmes to investigate"@en , "マーティン警部はホームズに捜査を許した"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Martin> , <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/investigation> .
+
+<http://kgc.knowledge-graph.jp/data/Desk>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Desk"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/last_year>
+        a           kgc:AbstractTime ;
+        rdfs:label  "last year"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/gunfire>
+        a           kgc:AbstractTime , kgc:PhysicalObject ;
+        rdfs:label  "gunfire"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/142>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/find> ;
+        kgc:source        "At the flower bed, Holmes picks up a brass tube"@en , "花壇にて、ホームズは真鍮の筒を拾った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/tube_of_bullet> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/flower_bed> .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls_A>
+        a           kgc:PhysicalObject , kgc:Object ;
+        rdfs:label  "Dancing dolls A"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/057>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/move> ;
+        kgc:source        "Something moves in the shadow of the storeroom"@en , "物置の影で何かが動いた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/something> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Shadow_of_storeroom> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/notEqualTo>
+        a           kgc:NotAction , kgc:Action ;
+        rdfs:label  "notEqualTo"@en ;
+        kgc:Not     <http://kgc.knowledge-graph.jp/data/predicate/equalto> .
+
+<http://kgc.knowledge-graph.jp/data/Window_of_study_room>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Window of study room"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Window> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/112>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/wear> ;
+        kgc:source        "Qubit wears nightwear"@en , "キュービットは寝間着だった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/nightwear> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/027>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/shutUp> ;
+        kgc:source        "Qubit shuts up"@en , "キュービットは黙っている"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+kgc:opposite  a             owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+<http://kgc.knowledge-graph.jp/data/predicate/Force>
+        a           kgc:Object ;
+        rdfs:label  "Force"@en .
+
+<http://kgc.knowledge-graph.jp/data/I>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "I"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/appear>
+        a           kgc:Action ;
+        rdfs:label  "appear"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/208>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notSend> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Elsie does not reply to the Letter Z"@en , "エルシィは返事をしなかった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Letter_Z> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/priority>
+        a           kgc:Object ;
+        rdfs:label  "priority"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/184>
+        a                 kgc:Situation ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/183> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/come> ;
+        kgc:source        "Holmes and Watson rush to Norfolk"@en , "ホームズとワトソンはノーフォークへ駆けつけた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Watson> , <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/Norfolk> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/notHit>
+        a           kgc:NotAction , kgc:Action ;
+        rdfs:label  "notHit"@en ;
+        kgc:Not     <http://kgc.knowledge-graph.jp/data/predicate/hit> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/locked>
+        a           kgc:Property ;
+        rdfs:label  "locked"@en .
+
+kgc:infoSource  a           owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:SceneProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/154>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/split> ;
+        kgc:source        "Flag separates characters"@en , "旗は文字を区切る"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/flag> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/character> .
+
+kgc:Situation  a         owl:Class ;
+        rdfs:subClassOf  kgc:Scene .
+
+<http://kgc.knowledge-graph.jp/data/Elsie_and_Qubit>
+        a           kgc:Place ;
+        rdfs:label  "Elsie and Qubit"@en .
+
+kgc:Scene  a    owl:Class .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/069>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/walk> ;
+        kgc:source        "Holmes walks around the room"@en , "ホームズは部屋を歩き回った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/070> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/station>
+        a           kgc:Place ;
+        rdfs:label  "station"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/124>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        kgc:source        "There were traces of bullets under the window frame"@en , "窓枠の下に銃弾の痕跡があった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Traces_of_bullets> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime ;
+        kgc:under         <http://kgc.knowledge-graph.jp/data/DancingMen/frame_of_window_of_study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/?M_?ERE_??E_SL?NE?>
+        a           kgc:Object ;
+        rdfs:label  "?M ?ERE ??E SL?NE?"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/039>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notForce> ;
+        kgc:source        "Qubit does not force Elsie to talk about the past"@en , "キュービットはエルシィに過去の話を強要しなかった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> , <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Past_of_Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/169b>
+        a           kgc:Situation ;
+        kgc:source  "The Sentence H is '?M ?ERE ??E SL?NE?'"@en , "文章Hは，'?M ?ERE ??E SL?NE?'である"@ja .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_C>
+        <https://schema.org/image>  <http://kgc.knowledge-graph.jp/data/DancingMen/image/Dancing_dolls_C.png> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/009>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/getMarried> ;
+        kgc:source        "Qubit get married last year"@en , "キュービットは昨年，結婚した"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> , <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:time          "1902-07-30T10:00:00"^^xsd:dateTime ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/last_year> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/something>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "something"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/070>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/send> ;
+        kgc:source        "Holmes send telegraph to Cicago"@en , "ホームズはシカゴに電報を打った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> , <http://kgc.knowledge-graph.jp/data/DancingMen/Chicago> ;
+        kgc:time          "1903-08-04T12:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/telegram> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/getAngry>
+        a           kgc:Action ;
+        rdfs:label  "getAngry"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/close>
+        a           kgc:Action ;
+        rdfs:label  "close"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/today>
+        a           kgc:AbstractTime ;
+        rdfs:label  "today"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/166>
+        a                 kgc:Statement ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/165> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:source        "The Dancing dolls X is 'ELSIE'"@en , "踊る人形Xは'ELSIE'である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_X> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/ELSIE> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/wake>
+        a           kgc:Action ;
+        rdfs:label  "wake"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/040>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/appear> ;
+        kgc:source        "New face appears in the neighborhood"@en , "新顔が近所で現れた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/New_face> ;
+        kgc:time          "1903-06-29T10:00:00"^^xsd:dateTime ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Neighborhood> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/gown>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "gown"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_Y>
+        a                           kgc:Object ;
+        rdfs:label                  "Dancing dolls Y"@en ;
+        <https://schema.org/image>  <http://kgc.knowledge-graph.jp/data/DancingMen/image/Dancing_dolls_Y.png> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/136>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        kgc:source        "Banknote is in the handbag"@en , "ハンドバッグには紙幣が入っていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/banknote> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/handbag> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/010>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "Qubit is a old family in Norfolk"@en , "キュービットはノーフォーク州の旧家である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/old_family> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Norfolk> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/drawn>
+        a           kgc:Property ;
+        rdfs:label  "drawn"@en .
+
+<http://kgc.knowledge-graph.jp/data/Elridge>
+        a           kgc:Place ;
+        rdfs:label  "Elridge"@en .
+
+<http://kgc.knowledge-graph.jp/data/Traces_of_candles>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Traces of candles"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Traces> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/candles> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/106>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/getHurt> ;
+        kgc:source        "Elsie gets hurt"@en , "エルシィは怪我を負っていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/Traces>
+        a           kgc:Object ;
+        rdfs:label  "Traces"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/frame_of_window_of_study_room>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "frame of window of study room"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/frame> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/study_room> , <http://kgc.knowledge-graph.jp/data/DancingMen/window> , <http://kgc.knowledge-graph.jp/data/DancingMen/window_of_study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/082>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/small> ;
+        kgc:source       "Martin is small"@en , "マーティン警部は小柄な男である"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Martin> .
+
+<http://kgc.knowledge-graph.jp/data/Storage_door>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Storage door"@en .
+
+<http://kgc.knowledge-graph.jp/data/T_AND_G>
+        a           kgc:Object ;
+        rdfs:label  "T AND G"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/nightwear_of_Qubit>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "nightwear of Qubit"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/nightwear> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/178>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/belongTo> ;
+        kgc:source        "Willson is a police in New York"@en , "ウィルスンはニューヨークの警察である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Willson> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/police> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/New_York> .
+
+kgc:middle  a               owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/052>
+        a                     kgc:Situation ;
+        kgc:at_the_same_time  <http://kgc.knowledge-graph.jp/data/DancingMen/053> ;
+        kgc:hasPredicate      <http://kgc.knowledge-graph.jp/data/predicate/sit> ;
+        kgc:source            "Qubit sits by the window around 2 am"@en , "キュービットは午前2時頃、窓際に腰かけていた"@ja ;
+        kgc:subject           <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time              "1903-08-03T02:00:00"^^xsd:dateTime ;
+        kgc:when              <http://kgc.knowledge-graph.jp/data/DancingMen/2_00> ;
+        kgc:where             <http://kgc.knowledge-graph.jp/data/DancingMen/window> .
+
+<http://kgc.knowledge-graph.jp/data/Threat>
+        a           kgc:Object ;
+        rdfs:label  "Threat"@en .
+
+kgc:how  a                  owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:SceneObjectProperty .
+
+kgc:source  a   owl:AnnotationProperty .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls_G>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Dancing dolls G"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/148>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "Doll is a substitute for characters"@en , "人形は文字の代用である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Doll> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/character> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/wear>
+        a           kgc:Action ;
+        rdfs:label  "wear"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/022>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/blue> ;
+        kgc:source       "Elsie's face turns blue"@en , "エルシィの顔は真っ青だった"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/face_of_Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/frame>
+        a           kgc:Object ;
+        rdfs:label  "frame"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/203>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Elsie's father is a gang boss"@en , "エルシィの父親は悪党のボスだった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/father_of_Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/boss_of_gang> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/118>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        kgc:source        "There are bookshelves on three sides of the study room"@en , "書斎の三方には本棚がある"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Bookshelf> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/three_sides_of_study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Elsie>
+        a           kgc:Object ;
+        rdfs:label  "Elsie"@en .
+
+<http://kgc.knowledge-graph.jp/data/Message>
+        a           kgc:Object ;
+        rdfs:label  "Message"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/examine>
+        a           kgc:Action ;
+        rdfs:label  "examine"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/094>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/call> ;
+        kgc:source        "Maid called a local doctor"@en , "女中が地元の医者を呼んだ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Maid> ;
+        kgc:time          "1903-08-06T04:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Local_doctor> .
+
+<http://kgc.knowledge-graph.jp/data/O>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "O"@en .
+
+<http://kgc.knowledge-graph.jp/data/Bedroom>
+        a           kgc:Place ;
+        rdfs:label  "Bedroom"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/enter>
+        a           kgc:Action ;
+        rdfs:label  "enter"@en .
+
+<http://kgc.knowledge-graph.jp/data/gunfire>
+        a           kgc:Object ;
+        rdfs:label  "gunfire"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_second_word>
+        a           kgc:Object ;
+        rdfs:label  "the second word"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/someone>
+        a           kgc:Person ;
+        rdfs:label  "someone"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/064>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/stop> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:source        "Elsie stops Qubits to protect"@en , "エルシィは守るためにキュービットを抑えた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:why           <http://kgc.knowledge-graph.jp/data/DancingMen/protect_of_Qubit> .
+
+kgc:to  a                   owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/evening>
+        a           kgc:Object ;
+        rdfs:label  "evening"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/89,_90,_91>
+        a           kgc:Object ;
+        rdfs:label  "89, 90, 91"@en .
+
+<http://kgc.knowledge-graph.jp/data/Letter_L>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Letter L"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/034>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/see> ;
+        kgc:on            <http://kgc.knowledge-graph.jp/data/DancingMen/Garden_sundial> ;
+        kgc:source        "Qubit see Dancing dolls on a sundial in the garden yesterday morning"@en , "キュービットは昨日の朝、庭の日時計の上に踊る人形を見た"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-07-29T08:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/yesterday_morning> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/flower_bed>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "flower bed"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/desk_of_study_room>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "desk of study room"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/desk> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/215>
+        a                 kgc:Statement ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/window_of_study_room> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/getOut> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:source        "エルシィが午前三時に窓に出る"@ja , "Elsie comes out of the window at 3 am"@en ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/216> ;
+        kgc:time          "1903-08-06T03:00:00"^^xsd:dateTime ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/3_00> .
+
+<http://kgc.knowledge-graph.jp/data/Shadow>
+        a           kgc:Object ;
+        rdfs:label  "Shadow"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/62a>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/drawn> ;
+        kgc:source       "Dancing dolls C are drawn on the Board 1"@en , "踊る人形Dは板1に描かれていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_C> ;
+        kgc:where        <http://kgc.knowledge-graph.jp/data/DancingMen/Board_1> .
+
+<http://kgc.knowledge-graph.jp/data/America>
+        a           kgc:Place ;
+        rdfs:label  "America"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/191>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:source        "エイブ・スレイニは以下を言った"@ja , "Abe_Slaney says the following"@en ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:time          "1903-08-06T16:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/208> , <http://kgc.knowledge-graph.jp/data/DancingMen/219> , <http://kgc.knowledge-graph.jp/data/DancingMen/206> , <http://kgc.knowledge-graph.jp/data/DancingMen/203> , <http://kgc.knowledge-graph.jp/data/DancingMen/220> , <http://kgc.knowledge-graph.jp/data/DancingMen/199> , <http://kgc.knowledge-graph.jp/data/DancingMen/207> , <http://kgc.knowledge-graph.jp/data/DancingMen/225> , <http://kgc.knowledge-graph.jp/data/DancingMen/205> , <http://kgc.knowledge-graph.jp/data/DancingMen/210> , <http://kgc.knowledge-graph.jp/data/DancingMen/218> , <http://kgc.knowledge-graph.jp/data/DancingMen/198> , <http://kgc.knowledge-graph.jp/data/DancingMen/227> , <http://kgc.knowledge-graph.jp/data/DancingMen/195> , <http://kgc.knowledge-graph.jp/data/DancingMen/224> , <http://kgc.knowledge-graph.jp/data/DancingMen/204> , <http://kgc.knowledge-graph.jp/data/DancingMen/201> , <http://kgc.knowledge-graph.jp/data/DancingMen/226> , <http://kgc.knowledge-graph.jp/data/DancingMen/194> , <http://kgc.knowledge-graph.jp/data/DancingMen/200> , <http://kgc.knowledge-graph.jp/data/DancingMen/216> , <http://kgc.knowledge-graph.jp/data/DancingMen/213> , <http://kgc.knowledge-graph.jp/data/DancingMen/192> , <http://kgc.knowledge-graph.jp/data/DancingMen/222> , <http://kgc.knowledge-graph.jp/data/DancingMen/211> , <http://kgc.knowledge-graph.jp/data/DancingMen/209> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/004>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/gentle> ;
+        kgc:source       "Qubit is a gentleman"@en , "キュービットは紳士である"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/Inside>
+        a           kgc:Place ;
+        rdfs:label  "Inside"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/161>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:middleOf      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_X> ;
+        kgc:source        "The Dancing dolls X has three characters in it"@en , "踊る人形Xは中に三文字を持つ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_X> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/three_characters> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/bullet>
+        a           kgc:Object ;
+        rdfs:label  "bullet"@en .
+
+<http://kgc.knowledge-graph.jp/data/Maid>
+        a           kgc:Person ;
+        rdfs:label  "Maid"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/076>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/come> ;
+        kgc:source        "Holmes and Watson come to North Walsham"@en , "ホームズとワトソンは北ウォールシャムで下車した"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Watson> , <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:time          "1903-08-06T12:00:00"^^xsd:dateTime ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/North_Walsham> .
+
+<http://kgc.knowledge-graph.jp/data/Abe_Slaney>
+        a           kgc:Person ;
+        rdfs:label  "Abe_Slaney"@en .
+
+kgc:therefore  a            owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:RelationBetweenScene .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/131>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        kgc:source        "There is a third party at the site"@en , "現場には第三者がいた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/someone> ;
+        kgc:time          "1903-08-06T03:00:00"^^xsd:dateTime ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/046>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/see> ;
+        kgc:source        "Qubit see Dancing dolls B the next morning"@en , "キュービットは翌朝に踊る人形Bを見た"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-07-31T08:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_B> ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/next_morning> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/getMarried>
+        a           kgc:Action ;
+        rdfs:label  "getMarried"@en .
+
+kgc:right  a                owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/227>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/close> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney closes the window"@en , "エイブ・スレイニは窓を閉める"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/window_of_study_room> .
+
+<http://kgc.knowledge-graph.jp/data/Watson>
+        a           kgc:Person ;
+        rdfs:label  "Watson"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/101>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/open> ;
+        kgc:source        "The door of the study room opens"@en , "書斎の扉が開いていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Door_of_study_room> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/016>
+        a                kgc:Statement ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/serious> ;
+        kgc:infoSource   <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:source       "Elsie is serious"@en , "エルシィは真面目である"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/Study_room>
+        a           kgc:Place ;
+        rdfs:label  "Study room"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/split>
+        a           kgc:Action ;
+        rdfs:label  "split"@en .
+
+<http://kgc.knowledge-graph.jp/data/Sundial>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Sundial"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/2_times>
+        a           kgc:Object ;
+        rdfs:label  "2 times"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/173>
+        a                 kgc:Situation ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/173a,_173c> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "The Sentence I points to 'At Elridge'"@en , "文章Iは'At Elridge'を指す"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_I> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/At_Elridge> .
+
+kgc:if  a                   owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:RelationBetweenScene .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/088>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:source        "A local doctor say the followings"@en , "地元の医者が以下を言った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Local_doctor> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/89,_90,_91> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/3_days_later>
+        a           kgc:AbstractTime ;
+        rdfs:label  "3 days later"@en .
+
+<http://kgc.knowledge-graph.jp/data/Smell_of_gunfire>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Smell of gunfire"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Smell> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/gunfire> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/sit>
+        a           kgc:Action ;
+        rdfs:label  "sit"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/think>
+        a           kgc:Action ;
+        rdfs:label  "think"@en .
+
+<http://kgc.knowledge-graph.jp/data/Neighborhood>
+        a           kgc:Place ;
+        rdfs:label  "Neighborhood"@en .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls_B>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Dancing dolls B"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/143>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        kgc:source        "Elridge is a few miles ahead of East Ruston"@en , "エルリッジが東ラストン方面の数マイル先にある"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elridge> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/East_Ruston> .
+
+kgc:Statement  a         owl:Class ;
+        rdfs:subClassOf  kgc:Scene .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/058>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/take> ;
+        kgc:source        "Qubit holds a handgun"@en , "キュービットは拳銃を持った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/059> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Handgun> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/follow>
+        a           kgc:Action ;
+        rdfs:label  "follow"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/telegram>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "telegram"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/113>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notMoved> ;
+        kgc:source        "The study room is not moved"@en , "書斎は動かされていなかった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Study_room> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/bullets>
+        a           kgc:Object ;
+        rdfs:label  "bullets"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/028>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/see> ;
+        kgc:source        "Qubit see Dancing dolls in a glass window last Tuesday"@en , "キュービットは先週の火曜日、ガラス窓に踊る人形を見た"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-07-23T10:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/last_Tuesday> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Glass_window> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/209>
+        a                 kgc:Statement ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/208> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/come> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney visits Norfolk"@en , "エイブ・スレイニはノーフォーク州を訪れた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/210> ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/Norfolk> .
+
+<http://kgc.knowledge-graph.jp/data/Character_C2>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Character C2"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/moonlighted>
+        a           kgc:Property ;
+        rdfs:label  "moonlighted"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/4_00>
+        a           kgc:AbstractTime ;
+        rdfs:label  "4:00"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/185>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:how           <http://kgc.knowledge-graph.jp/data/DancingMen/Letter_L> ;
+        kgc:source        "Holmes talks the following to Abe_Slaney in the Letter L"@en , "ホームズはエイブ・スレイニに手紙で以下を言った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:time          "1903-08-06T15:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/186> .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls_X>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Dancing dolls X"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/childhood>
+        a           kgc:Property ;
+        rdfs:label  "childhood"@en .
+
+kgc:what  a                 owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:SceneObjectProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/morning_after_2_days>
+        a           kgc:Object ;
+        rdfs:label  "morning after 2 days"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/bullet_of_Qubit>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "bullet of Qubit"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/bullet> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/permit>
+        a           kgc:Action ;
+        rdfs:label  "permit"@en .
+
+<http://kgc.knowledge-graph.jp/data/Candle>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Candle"@en .
+
+kgc:Action  a   owl:Class .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/210>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/draw> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney paints dancing dolls"@en , "エイブ・スレイニは踊る人形を描いた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> .
+
+kgc:whom  a                 owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:SceneObjectProperty .
+
+<http://kgc.knowledge-graph.jp/data/predicate/Send>
+        a           kgc:Object ;
+        rdfs:label  "Send"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/move>
+        a           kgc:Action ;
+        rdfs:label  "move"@en .
+
+<http://kgc.knowledge-graph.jp/data/Martin>
+        a           kgc:Person ;
+        rdfs:label  "Martin"@en .
+
+kgc:next_to  a              owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_D>
+        <https://schema.org/image>  <http://kgc.knowledge-graph.jp/data/DancingMen/image/Dancing_dolls_D.png> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/tube_of_bullet>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "tube of bullet"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/tube> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/bullet> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/071>
+        a                 kgc:Situation ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/receive> ;
+        kgc:source        "On the second evening, Holmes receives the Letter Y from Qubit"@en , "2日目の夕べ、ホームズはキュービットから手紙を受け取った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:time          "1903-08-05T17:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Letter_Y> ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/evening_of_the_second_day> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/boss>
+        a           kgc:Object ;
+        rdfs:label  "boss"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/leave>
+        a           kgc:Action ;
+        rdfs:label  "leave"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/167>
+        a                 kgc:Situation ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/167a> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "The Dancing dolls Y  is 'COME'"@en , "踊る人形Yは'COME'である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_Y> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/COME> .
+
+<http://kgc.knowledge-graph.jp/data/Signs>
+        a           kgc:Object ;
+        rdfs:label  "Signs"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/041>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/ask> ;
+        kgc:source        "Holmes asks Qubit the following"@en , "ホームズはキュービットに以下を頼んだ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> , <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:time          "1903-07-30T14:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/042> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/222>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/shoot> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Qubit shoot Abe_Slaney"@en , "キュービットはエイブ・スレイニを撃った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/224> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> .
+
+<http://kgc.knowledge-graph.jp/data/Door_of_study_room>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Door of study room"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Door> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/137>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/burst> ;
+        kgc:source        "The window frame bursts from the room"@en , "窓枠は室内から裂けていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Window_frame_of_study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/011>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/American> ;
+        kgc:source       "Elsie is American"@en , "エルシィはアメリカ人である"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/beSurprised>
+        a           kgc:Action ;
+        rdfs:label  "beSurprised"@en .
+
+<http://kgc.knowledge-graph.jp/data/North_Walsham>
+        a           kgc:Place ;
+        rdfs:label  "North Walsham"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_final_position>
+        a           kgc:Object ;
+        rdfs:label  "the final position"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/107>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/full> ;
+        kgc:source       "The room and the corridor are full of smoke"@en , "部屋と廊下に煙が充満していた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/smoke> ;
+        kgc:time         "1903-08-06T04:02:00"^^xsd:dateTime ;
+        kgc:where        <http://kgc.knowledge-graph.jp/data/DancingMen/Study_room> , <http://kgc.knowledge-graph.jp/data/DancingMen/Corridor> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/protect>
+        a           kgc:Object ;
+        rdfs:label  "protect"@en .
+
+kgc:orTarget  a             owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:TargetObjProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_second_position>
+        a           kgc:Place ;
+        rdfs:label  "the second position"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/179>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "Abe_Slaney is a gang in Chicago"@en , "エイブ・スレイニはシカゴの悪党である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/gang> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Chicago> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_next_morning>
+        a           kgc:AbstractTime ;
+        rdfs:label  "the next morning"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/053>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/moonlighted> ;
+        kgc:source       "Around 2 am, outside is moonlighted"@en , "午前2時頃、外は月明かりだけである"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/outside> ;
+        kgc:time         "1903-08-03T02:00:00"^^xsd:dateTime ;
+        kgc:when         <http://kgc.knowledge-graph.jp/data/DancingMen/2_00> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/burst>
+        a           kgc:Action ;
+        rdfs:label  "burst"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/149>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/understandable> ;
+        kgc:how          <http://kgc.knowledge-graph.jp/data/DancingMen/cryptography> ;
+        kgc:source       "Dancing dolls can be solved by the rules of cryptography"@en , "踊る人形は暗号の規則で解くことができる"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> .
+
+kgc:can  a                  owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:ActionOption .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/023>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/read> ;
+        kgc:source        "Elsie read the Letter Z"@en , "エルシィは手紙を読んだ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/024> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Letter_Z> .
+
+<http://kgc.knowledge-graph.jp/data/Window_frame_of_study_room>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Window frame of study room"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Window_frame> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/study_room> .
+
+<http://kgc.knowledge-graph.jp/data/Doll>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Doll"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/face>
+        a           kgc:Object ;
+        rdfs:label  "face"@en .
+
+<http://kgc.knowledge-graph.jp/data/E>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "E"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/204>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/find> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Elsie notices Abe_Slaney's identity"@en , "エルシィはエイブ・スレイニの正体に気付いた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Identity_of_Abe_Slaney> .
+
+kgc:Animal  a            owl:Class ;
+        rdfs:subClassOf  kgc:Object .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/119>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        kgc:opposite      <http://kgc.knowledge-graph.jp/data/DancingMen/window_of_study_room> ;
+        kgc:source        "The desk is placed against the window"@en , "机は窓に向かって置かれている"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Desk> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/180>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/send> ;
+        kgc:source        "Abe_Slaney send the following to Elsie"@en , "エイブ・スレイニはエルシィに以下を送った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/181> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/095>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/find> ;
+        kgc:source        "Maid is the first finders"@en , "女中が第一発見者である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Maid> , <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:time          "1903-08-06T04:00:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/four_times>
+        a           kgc:Object ;
+        rdfs:label  "four times"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/065>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:source        "Holmes says the following to Qubit"@en , "ホームズはキュービットに以下を言った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> , <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/066> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/120>
+        a                 kgc:Situation ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/window_of_study_room> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/beSeen> ;
+        kgc:source        "the garden can be seen from the window"@en , "窓からは庭が見える"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/garden> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/this_morning>
+        a           kgc:Object ;
+        rdfs:label  "this morning"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/035>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/show> ;
+        kgc:source        "Qubit shows Elsie Dancing dolls"@en , "キュービットはエルシィに踊る人形を見せた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> , <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/036> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> .
+
+kgc:then  a                 owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:RelationBetweenScene .
+
+<http://kgc.knowledge-graph.jp/data/predicate/find>
+        a           kgc:Action ;
+        rdfs:label  "find"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/216>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Elsie speaks the following to Abe_Slaney"@en , "エルシィはエイブ・スレイニに以下を話す"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:time          "1903-08-06T03:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/217> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/2_00>
+        a           kgc:AbstractTime ;
+        rdfs:label  "2:00"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/62b>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notEqualTo> ;
+        kgc:source        "The Board 1 is different with the Board 2"@en , "板1と板2は異なる"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Board_1> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Board_2> .
+
+<http://kgc.knowledge-graph.jp/data/Letter_X>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Letter X"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/192>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/shoot> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Ave Sureini shoot Qubit"@en , "エイブ・スレイニはキュービットを撃った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/005>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/beDancing> ;
+        kgc:on            <http://kgc.knowledge-graph.jp/data/DancingMen/paper> ;
+        kgc:source        "Dolls are dancing on paper"@en , "人形が紙の上で踊っている"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/dolls> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/metadata>
+        rdfs:comment        "作成日（2019-08-26） "@ja ;
+        cc:attributionName  "SIG-SWO, JSAI" ;
+        cc:license          <https://creativecommons.org/licenses/by/4.0/> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/short>
+        a           kgc:Property ;
+        rdfs:label  "short"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_J>
+        <https://schema.org/image>  <http://kgc.knowledge-graph.jp/data/DancingMen/image/Dancing_dolls_J.png> .
+
+<http://kgc.knowledge-graph.jp/data/Message_of_Abe_Slaney>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Message of Abe_Slaney"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Message> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/Abe_Slaney> .
+
+kgc:Thought  a           owl:Class ;
+        rdfs:subClassOf  kgc:Scene .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/162>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/appear> ;
+        kgc:how           <http://kgc.knowledge-graph.jp/data/DancingMen/2_times> ;
+        kgc:source        "The Dancing dolls X appears two times in Dancing dolls"@en , "踊る人形に2回、踊る人形Xが現れている"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_X> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/shoot>
+        a           kgc:Action ;
+        rdfs:label  "shoot"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/077>
+        a                 kgc:Situation ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/Norwich> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/come> ;
+        kgc:source        "Martin visits North Walsham from Norwich"@en , "マーティン警部がノリッジから北ウォールシャムを訪れた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Martin> ;
+        kgc:time          "1903-08-06T12:00:00"^^xsd:dateTime ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/North_Walsham> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/prayer>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "prayer"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/include>
+        a           kgc:Action ;
+        rdfs:label  "include"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/132>
+        a                 kgc:Situation ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/garden> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/shoot> ;
+        kgc:source        "someone fires into the room from the outside"@en , "第三者は屋外から部屋に発砲した"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/someone> ;
+        kgc:time          "1903-08-06T03:00:00"^^xsd:dateTime ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/047>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/drawn> ;
+        kgc:how          <http://kgc.knowledge-graph.jp/data/DancingMen/Chalk> ;
+        kgc:on           <http://kgc.knowledge-graph.jp/data/DancingMen/Storage_door> ;
+        kgc:source       "Dancing dolls B are drawn with chalk on the door of the storeroom"@en , "踊る人形Bは物置の扉の上にチョークで描かれていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_B> ;
+        kgc:then         <http://kgc.knowledge-graph.jp/data/DancingMen/049> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/full>
+        a           kgc:Property ;
+        rdfs:label  "full"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/228>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/read> ;
+        kgc:source        "Abe_Slaney read Dancing dolls J"@en , "エイブ・スレイニは踊る人形Jを読んだ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_J> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/102>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        kgc:on            <http://kgc.knowledge-graph.jp/data/DancingMen/Desk> ;
+        kgc:source        "A candle is on the desk"@en , "ローソクが卓上にともっていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Candle> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/017>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:source        "Elsie has bad memories"@en , "エルシィは嫌な思い出を持つ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Bad_memories> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/suicide>
+        a           kgc:Object ;
+        rdfs:label  "suicide"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/174>
+        a                kgc:Situation ;
+        kgc:because      <http://kgc.knowledge-graph.jp/data/DancingMen/021> ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/American> ;
+        kgc:source       "Abe_Slaney is American"@en , "エイブ・スレイニはアメリカ人である"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/beSeen>
+        a           kgc:Action ;
+        rdfs:label  "beSeen"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/089>
+        a                kgc:Statement ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/notDead> ;
+        kgc:infoSource   <http://kgc.knowledge-graph.jp/data/DancingMen/Local_doctor> ;
+        kgc:source       "Elsie is not dead"@en , "エルシィは死んでいない"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:time         "1903-08-06T14:00:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/police>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "police"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/notExist>
+        a           kgc:NotAction , kgc:Action ;
+        rdfs:label  "notExist"@en ;
+        kgc:Not     <http://kgc.knowledge-graph.jp/data/predicate/exist> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/notMoved>
+        a           kgc:NotAction , kgc:Action ;
+        rdfs:label  "notMoved"@en ;
+        kgc:Not     <http://kgc.knowledge-graph.jp/data/predicate/moved> .
+
+kgc:adjunct  a              owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+kgc:SceneObjectProperty
+        a                   owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:SceneProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/144>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/ask> ;
+        kgc:source        "Holmes asks the horse boy for the following"@en , "ホームズは馬番の少年に以下を頼んだ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Horse_boy> , <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:time          "1903-08-06T15:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/145> .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls_C>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Dancing dolls C"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/059>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/stop> ;
+        kgc:source        "Elsie stops Qubit"@en , "エルシィはキュービットを止めた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/Door>
+        a           kgc:Object ;
+        rdfs:label  "Door"@en .
+
+<http://kgc.knowledge-graph.jp/data/COME>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "COME"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/stop>
+        a           kgc:Action ;
+        rdfs:label  "stop"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/114>
+        a                kgc:Situation ;
+        kgc:from         <http://kgc.knowledge-graph.jp/data/DancingMen/Inside> ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/locked> ;
+        kgc:source       "The door is locked from the inside"@en , "扉は内側から鍵がかけられていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Door_of_study_room> ;
+        kgc:time         "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/029>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/think> ;
+        kgc:source        "Qubit thinks of the following"@en , "キュービットは以下を思った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/030> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/090>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notSay> ;
+        kgc:source        "The local doctor does not give a finding"@en , "地元の医者は所見を述べない"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Local_doctor> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/findings> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/handbag>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "handbag"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/home_of_Qubit>
+        a            kgc:OFobj , kgc:Place ;
+        rdfs:label   "home of Qubit"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/home> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/candles>
+        a           kgc:Object ;
+        rdfs:label  "candles"@en .
+
+<http://kgc.knowledge-graph.jp/data/Window>
+        a           kgc:Object ;
+        rdfs:label  "Window"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/3_00>
+        a           kgc:AbstractTime ;
+        rdfs:label  "3:00"@en .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls_Y>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Dancing dolls Y"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/186>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/come> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:source        "Abe_Slaney comes to Qubit's home"@en , "エイブ・スレイニはキュービット宅に来る"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:time          "1903-08-06T16:00:00"^^xsd:dateTime ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/home_of_Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/old_family>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "old family"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/gentle>
+        a           kgc:Property ;
+        rdfs:label  "gentle"@en .
+
+<http://kgc.knowledge-graph.jp/data/V>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "V"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/Say>
+        a           kgc:Object ;
+        rdfs:label  "Say"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/father>
+        a           kgc:Object ;
+        rdfs:label  "father"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/call>
+        a           kgc:Action ;
+        rdfs:label  "call"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/156>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:source        "Dancing dolls D has 'E' in the second and fourth position"@en , "踊る人形Dは2番目と4番目にEを持つ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_D> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/E> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/the_second_position> , <http://kgc.knowledge-graph.jp/data/DancingMen/the_fourth_position> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/030>
+        a                 kgc:Thought ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/draw> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:source        "The horse boy draws Dancing dolls"@en , "馬番の少年が踊る人形を描いた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Horse_boy> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/dolls>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "dolls"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/211>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/stay> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney begins to stay in the basement of Elridge Farm a month ago"@en , "エイブスレイニは一か月前にエルリッジ農場の地下室に泊まり始めた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:time          "1903-06-29T10:00:00"^^xsd:dateTime ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/one_month_ago> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Elridge> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/126>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/open> ;
+        kgc:source        "The door and window of the room are open when fired"@en , "発砲されたとき、部屋の扉と窓は開いていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/window_of_study_room> , <http://kgc.knowledge-graph.jp/data/DancingMen/Door_of_study_room> ;
+        kgc:time          "1903-08-06T03:00:00"^^xsd:dateTime ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/gunfire> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/outside>
+        a           kgc:Place ;
+        rdfs:label  "outside"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/note>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "note"@en .
+
+<http://kgc.knowledge-graph.jp/data/Past>
+        a           kgc:Object ;
+        rdfs:label  "Past"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_E>
+        <https://schema.org/image>  <http://kgc.knowledge-graph.jp/data/DancingMen/image/Dancing_dolls_E.png> .
+
+kgc:Object  a   owl:Class .
+
+<http://kgc.knowledge-graph.jp/data/predicate/meaningful>
+        a           kgc:Property ;
+        rdfs:label  "meaningful"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_first_position>
+        a           kgc:Object ;
+        rdfs:label  "the first position"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/198>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/follow> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney follows Elsie"@en , "エイブ・スレイニはエルシィにつきまとった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/horse_boy>
+        a           kgc:Object ;
+        rdfs:label  "horse boy"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/072>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/drawn> ;
+        kgc:on           <http://kgc.knowledge-graph.jp/data/DancingMen/Sundial> ;
+        kgc:source       "In the morning of the second day, Dancing doll E are drawn on the sundial"@en , "2日目の朝、日時計の上に踊る人形eが描かれていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_E> ;
+        kgc:time         "1903-08-05T08:00:00"^^xsd:dateTime ;
+        kgc:when         <http://kgc.knowledge-graph.jp/data/DancingMen/the_second_morning> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/notForce>
+        a           kgc:NotAction , kgc:Action ;
+        rdfs:label  "notForce"@en ;
+        kgc:Not     <http://kgc.knowledge-graph.jp/data/predicate/force> .
+
+<http://kgc.knowledge-graph.jp/data/Maid_room>
+        a           kgc:Place ;
+        rdfs:label  "Maid room"@en .
+
+<http://kgc.knowledge-graph.jp/data/Horse_boy>
+        a           kgc:Person ;
+        rdfs:label  "Horse boy"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/put>
+        a           kgc:Action ;
+        rdfs:label  "put"@en .
+
+<http://kgc.knowledge-graph.jp/data/Corridor>
+        a           kgc:Place ;
+        rdfs:label  "Corridor"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/173a,_173c>
+        a           kgc:Object ;
+        rdfs:label  "173a, 173c"@en .
+
+<http://kgc.knowledge-graph.jp/data/London>
+        a           kgc:Place ;
+        rdfs:label  "London"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/168>
+        a                 kgc:Situation ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/167> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/include> ;
+        kgc:source        "The Dancing dolls Y includes 'C', 'O', and 'M'"@en , "踊る人形Yは'C'、'O'、'M'を含む"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_Y> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/M> , <http://kgc.knowledge-graph.jp/data/DancingMen/O> , <http://kgc.knowledge-graph.jp/data/DancingMen/C> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/boss_of_gang>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "boss of gang"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/boss> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/gang> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/three_sides_of_study_room>
+        a            kgc:OFobj , kgc:Place ;
+        rdfs:label   "three sides of study room"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/three_sides> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/042>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/copy> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:source        "Qubit copies Dancing dolls"@en , "キュービットは踊る人形を写し取る"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> .
+
+kgc:infoReceiver  a         owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:SceneProperty .
+
+<http://kgc.knowledge-graph.jp/data/predicate/getHurt>
+        a           kgc:Action ;
+        rdfs:label  "getHurt"@en .
+
+kgc:why  a                  owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:SceneObjectProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/138>
+        a         kgc:Situation ;
+        kgc:from  <http://kgc.knowledge-graph.jp/data/DancingMen/study_room> ;
+        kgc:time  "1903-08-06T14:00:00"^^xsd:dateTime .
+
+kgc:ActionOption  a  owl:ObjectProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/casual_wear>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "casual wear"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/108>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:source        "Rooms and corridors have the smell of gunpowder"@en , "部屋と廊下は火薬のにおいを持つ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Smell_of_gunfire> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Study_room> , <http://kgc.knowledge-graph.jp/data/DancingMen/Corridor> .
+
+kgc:otherwise  a            owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:RelationBetweenScene .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/084>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/belongTo> ;
+        kgc:source        "Martin is the police of Norfolk"@en , "マーティン警部はノーフォークの警察である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Martin> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/police> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Norfolk> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/read>
+        a           kgc:Action ;
+        rdfs:label  "read"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/paper>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "paper"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/173a>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/meaningful> ;
+        kgc:source       "The Sentence I becomes meaningful"@en , "文章Iは意味が通じる"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_I> ;
+        kgc:when         <http://kgc.knowledge-graph.jp/data/DancingMen/173b> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/054>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/wear> ;
+        kgc:source        "Elsie wears a gown"@en , "エルシィはガウンを着ていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/gown> .
+
+<http://kgc.knowledge-graph.jp/data/study_room>
+        a           kgc:Object ;
+        rdfs:label  "study room"@en .
+
+kgc:Property  a  owl:Class .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/024>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/put> ;
+        kgc:source        "Elsie put the Letter Z in the fireplace"@en , "エルシィは暖炉に手紙を入れた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/025> ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/fireplace> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Letter_Z> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/Hit>
+        a           kgc:Object ;
+        rdfs:label  "Hit"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/next_morning>
+        a           kgc:AbstractTime ;
+        rdfs:label  "next morning"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/promise>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "promise"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/belongTo>
+        a           kgc:Action ;
+        rdfs:label  "belongTo"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/study_room>
+        a           kgc:Place , kgc:PhysicalObject , kgc:Object ;
+        rdfs:label  "study room"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/205>
+        a                 kgc:Statement ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/204> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/escape> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Elsie flees to London"@en , "エルシィはロンドンへ逃げた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/London> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/copy>
+        a           kgc:Action ;
+        rdfs:label  "copy"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/181>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/need> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Elsie needs to be ready to meet God"@en , "エルシィは神に会う覚悟が必要である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/prayer> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/096>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/wake> ;
+        kgc:source        "Maid get up with gunfire"@en , "女中は銃声で起きた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Maid> ;
+        kgc:time          "1903-08-06T04:00:00"^^xsd:dateTime ;
+        kgc:why           <http://kgc.knowledge-graph.jp/data/DancingMen/gunfire> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_first_position_of_Sentence_H>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "the first position of Sentence H"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/the_first_position> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_H> .
+
+<http://kgc.knowledge-graph.jp/data/Holmes>
+        a           kgc:Person ;
+        rdfs:label  "Holmes"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/151>
+        a                 kgc:Situation ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/153> , <http://kgc.knowledge-graph.jp/data/DancingMen/152> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "Doll F is 'E'"@en , "踊る人形fは'E'である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_F> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/E> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/066>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/return> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:source        "Qubit returns home today"@en , "キュービットは今日中に帰宅する"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-08-03T12:00:00"^^xsd:dateTime ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/home> ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/today> .
+
+kgc:LocationProperty  a     owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:SceneObjectProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/121>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/fall> ;
+        kgc:middleOf      <http://kgc.knowledge-graph.jp/data/DancingMen/study_room> ;
+        kgc:source        "The qubit is falling across the study room"@en , "キュービットは部屋を横切るように倒れていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/036>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/fall> ;
+        kgc:source        "Elsie falls"@en , "エルシィは卒倒した"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/New_face>
+        a           kgc:Person ;
+        rdfs:label  "New_face"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/217>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/leave> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:source        "Abe_Slaney leaves"@en , "エイブ・スレイニが立ち去る"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> .
+
+<http://kgc.knowledge-graph.jp/data/NEVER>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "NEVER"@en .
+
+kgc:ofWhole  a              owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:TargetObjProperty .
+
+<http://kgc.knowledge-graph.jp/data/predicate/feel>
+        a           kgc:Action ;
+        rdfs:label  "feel"@en .
+
+<http://kgc.knowledge-graph.jp/data/Letter_Y>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Letter Y"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/006>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/see> ;
+        kgc:source        "Elsie see Dancing dolls A"@en , "エルシィは文字を見た"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/007> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_A> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/beClosed>
+        a           kgc:Action ;
+        rdfs:label  "beClosed"@en .
+
+kgc:subject  a              owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:SceneProperty .
+
+kgc:near  a                 owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+kgc:Person  a            owl:Class ;
+        rdfs:subClassOf  kgc:Animal .
+
+<http://kgc.knowledge-graph.jp/data/predicate/stand>
+        a           kgc:Action ;
+        rdfs:label  "stand"@en .
+
+<http://kgc.knowledge-graph.jp/data/Pebble>
+        a           kgc:Object ;
+        rdfs:label  "Pebble"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/078>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/beShot> ;
+        kgc:source        "Qubit and Elsie are shoot"@en , "キュービットとエルシィは撃たれた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> , <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:time          "1903-08-06T03:00:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/end>
+        a           kgc:Object ;
+        rdfs:label  "end"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/133>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/shoot> ;
+        kgc:source        "Qubit shoots a third party"@en , "キュービットは第三者を撃った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/134> ;
+        kgc:time          "1903-08-06T03:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/someone> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/229>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "Dancing dolls J is come soon at once"@en , "踊る人形Jはすぐに来いである"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_J> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Come_soon_at_once> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/103>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/fall> ;
+        kgc:middleOf      <http://kgc.knowledge-graph.jp/data/DancingMen/room> ;
+        kgc:source        "Qubit falls in the middle of the room"@en , "キュービットが部屋の真ん中に倒れていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/018>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notSay> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:source        "Elsie does not say memories"@en , "エルシィは思い出を言わない"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Past_of_Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/Sentence_H>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Sentence H"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/167a>
+        a                 kgc:Object , kgc:Situation ;
+        rdfs:label        "167a"@en ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:source        "The Dancing dolls Y has 'E' at the end"@en , "踊る人形Yは'E'を最後に持つ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_Y> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/E> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/the_final_position_of_Dancing_dolls_Y> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_final_position_of_Dancing_dolls_Y>
+        a            kgc:OFobj ;
+        rdfs:label   "the final position of Dancing dolls Y"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/the_final_position> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_Y> .
+
+kgc:ofPart  a               owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:TargetObjProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/cipher>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "cipher"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/findings>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "findings"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_H>
+        a           kgc:Object ;
+        rdfs:label  "Sentence H"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/230>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/think> ;
+        kgc:source        "Abe_Slaney thinks of the following"@en , "エイブ・スレイニは以下を思っていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:time          "1903-08-06T15:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/231> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/window_of_study_room>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "window of study room"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/window> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/study_room> .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls_D>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Dancing dolls D"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/tall>
+        a           kgc:Property ;
+        rdfs:label  "tall"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/145>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/take> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:source        "The horse boy takes notes to Elridge"@en , "馬番の少年は書き付けをエルリッジ農場へ持っていく"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Horse_boy> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/change>
+        a           kgc:Action ;
+        rdfs:label  "change"@en .
+
+kgc:time  a         owl:DatatypeProperty ;
+        rdfs:range  xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls>
+        a           kgc:Place , kgc:PhysicalObject ;
+        rdfs:label  "Dancing dolls"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/front>
+        a           kgc:Place ;
+        rdfs:label  "front"@en .
+
+<http://kgc.knowledge-graph.jp/data/storeroom>
+        a           kgc:Object ;
+        rdfs:label  "storeroom"@en .
+
+kgc:left  a                 owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+<http://kgc.knowledge-graph.jp/data/A>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "A"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/200>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/force> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney forces Elsie to commit suicide"@en , "エイブ・スレイニはエルシィを自殺に追いやった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/suicide> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/115>
+        a                 kgc:Situation ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/Maid_room> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/getOut> ;
+        kgc:source        "The maid leaves their room"@en , "女中が自分たちの部屋を出た"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Maid> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/091>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/beShot> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Local_doctor> ;
+        kgc:source        "Qubit is shot through the heart"@en , "キュービットは心臓を撃ち抜かれている"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/heart> .
+
+<http://kgc.knowledge-graph.jp/data/L>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "L"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/061>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/drawn> ;
+        kgc:on           <http://kgc.knowledge-graph.jp/data/DancingMen/Storage_door> ;
+        kgc:source       "The next morning, Dancing dolls D are drawn on the door of the storeroom"@en , "翌朝、物置の扉の上に踊る人形Dが描かれていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_D> ;
+        kgc:time         "1903-08-03T08:00:00"^^xsd:dateTime ;
+        kgc:when         <http://kgc.knowledge-graph.jp/data/DancingMen/the_next_morning> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/hear>
+        a           kgc:Action ;
+        rdfs:label  "hear"@en .
+
+kgc:OFobj  a             owl:Class ;
+        rdfs:subClassOf  kgc:Object .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/031>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:source        "The horse boy says the following"@en , "馬番の少年は以下を言った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Horse_boy> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/032> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/EqualTo>
+        a           kgc:Object ;
+        rdfs:label  "EqualTo"@en .
+
+<http://kgc.knowledge-graph.jp/data/Qubit>
+        a           kgc:Person ;
+        rdfs:label  "Qubit"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/127>
+        a                 kgc:Situation ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/129> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/open> ;
+        kgc:how           <http://kgc.knowledge-graph.jp/data/DancingMen/a_short_time> ;
+        kgc:source        "The door and the window of the room are open for a short time"@en , "わずかな時間、部屋の扉と窓が開いていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/window_of_study_room> , <http://kgc.knowledge-graph.jp/data/DancingMen/Door_of_study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/a_short_time>
+        a           kgc:Object ;
+        rdfs:label  "a short time"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/001>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/drawn> ;
+        kgc:on           <http://kgc.knowledge-graph.jp/data/DancingMen/paper> ;
+        kgc:source       "Dancing dolls A are drawn on paper"@en , "踊る人形が紙に書かれていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_A> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/blue>
+        a           kgc:Property ;
+        rdfs:label  "blue"@en .
+
+<http://kgc.knowledge-graph.jp/data/Past_of_Elsie>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Past of Elsie"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Past> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/Willson>
+        a           kgc:Person ;
+        rdfs:label  "Willson"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_F>
+        <https://schema.org/image>  <http://kgc.knowledge-graph.jp/data/DancingMen/image/Dancing_dolls_F.png> .
+
+<http://kgc.knowledge-graph.jp/data/Bullet>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Bullet"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/face_of_Elsie>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "face of Elsie"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/face> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/199>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/kill> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney kills Qubit"@en , "エイブ・スレイニはキュービットを殺した"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/200> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+kgc:Not  a                  owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:ActionOption .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/073>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/see> ;
+        kgc:source        "Holmes sees Dancing dolls E"@en , "ホームズは踊る人形Eを見た"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/074> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_E> .
+
+<http://kgc.knowledge-graph.jp/data/Come_soon_at_once>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Come soon at once"@en .
+
+<http://kgc.knowledge-graph.jp/data/Bookshelf>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Bookshelf"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/home>
+        a           kgc:Place ;
+        rdfs:label  "home"@en .
+
+kgc:canNot  a               owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:ActionOption .
+
+<http://kgc.knowledge-graph.jp/data/predicate/take>
+        a           kgc:Action ;
+        rdfs:label  "take"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/169>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/short> ;
+        kgc:source       "The Sentence H is short"@en , "文章Hは短い"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_H> .
+
+<http://kgc.knowledge-graph.jp/data/sundial>
+        a           kgc:Object ;
+        rdfs:label  "sundial"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/043>
+        a                 kgc:Situation ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/receive> ;
+        kgc:source        "今朝，ホームズはキュービットから電報を受け取った"@ja , "Holmes receives a telegram from Qubit this morning"@en ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/044> ;
+        kgc:time          "1903-08-03T10:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/telegram> ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/this_morning> .
+
+kgc:hasProperty  a          owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:TargetObjProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/224>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notHit> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Qubit's bullet goes out of Abe_Slaney"@en , "キュービットの弾はエイブ・スレイニを外れた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/bullet_of_Qubit> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/225> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/013>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/live> ;
+        kgc:source        "Qubit and Elsie live in Norfolk"@en , "キュービットとエルシィはノーフォーク州に住んでいる"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> , <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Norfolk> .
+
+kgc:on  a                   owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+<http://kgc.knowledge-graph.jp/data/predicate/give>
+        a           kgc:Action ;
+        rdfs:label  "give"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/point>
+        a           kgc:Action ;
+        rdfs:label  "point"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/109>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/beClosed> ;
+        kgc:source        "The window of the room is closed"@en , "部屋の窓は閉められていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Window_of_study_room> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/170>
+        a                 kgc:Situation ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/169> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "The character C1 at the first position of Sentence H is A"@en , "文章Hの最初の位置にある文字C1はAである"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Charactor_C1> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/A> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/the_first_position_of_Sentence_H> .
+
+kgc:when_during  a          owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:RelationBetweenScene .
+
+<http://kgc.knowledge-graph.jp/data/predicate/wellUnderstood>
+        a           kgc:Property ;
+        rdfs:label  "wellUnderstood"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/140>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        kgc:source        "Under the window of the study there is a flower bed"@en , "書斎の窓の下には花壇がある"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/flower_bed> ;
+        kgc:under         <http://kgc.knowledge-graph.jp/data/DancingMen/window_of_study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/173b>
+        a                 kgc:AbstractTime , kgc:Situation ;
+        rdfs:label        "173b"@en ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:source        "The Sentence I has 'T' and 'G'"@en , "文章Iが'T'と'G'を持つ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_I> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/T_AND_G> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/055>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:source        "Elsie says the following to Qubit"@en , "エルシィはキュービットに以下を言った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> , <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/056> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/yesterday_morning>
+        a           kgc:AbstractTime ;
+        rdfs:label  "yesterday morning"@en .
+
+kgc:ORobj  a             owl:Class ;
+        rdfs:subClassOf  kgc:Object .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/110>
+        a                kgc:Situation ;
+        kgc:from         <http://kgc.knowledge-graph.jp/data/DancingMen/Inside> ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/locked> ;
+        kgc:source       "The window of the room is locked from the inside"@en , "部屋の窓は内側から鍵がかけられていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Window_of_study_room> ;
+        kgc:time         "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/flag>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "flag"@en .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls_J>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Dancing dolls J"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/025>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/shutUp> ;
+        kgc:source        "Elsie shuts up"@en , "エルシィは黙っている"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/206>
+        a                kgc:Statement ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/engaged> ;
+        kgc:infoSource   <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source       "Elsie and Abe_Slaney are engaged"@en , "エルシィとエイブ・スレイニは婚約していた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/097>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/hear> ;
+        kgc:how           <http://kgc.knowledge-graph.jp/data/DancingMen/a_short_time> ;
+        kgc:source        "銃声の1分後に再度、銃声が聞こえた"@ja , "One minute after the gunshoot, Maid hears the gunshoot again"@en ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Maid> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/100> ;
+        kgc:time          "1903-08-06T04:01:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/gunfire> ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/One_minute_after_gunfire> .
+
+<http://kgc.knowledge-graph.jp/data/R>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "R"@en .
+
+<http://kgc.knowledge-graph.jp/data/Bad_memories>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Bad memories"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/desk>
+        a           kgc:Object ;
+        rdfs:label  "desk"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/priority_of_Elsie>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "priority of Elsie"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/priority> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/152>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/appear> ;
+        kgc:how           <http://kgc.knowledge-graph.jp/data/DancingMen/most_often> ;
+        kgc:source        "E is most used in the alphabet"@en , "Eはアルファベットにおいて最も使われている"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/E> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Alphabet> .
+
+<http://kgc.knowledge-graph.jp/data/East_Ruston>
+        a           kgc:Place ;
+        rdfs:label  "East Ruston"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/067>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/examine> ;
+        kgc:source        "Holmes examines Dancing dolls"@en , "ホームズは踊る人形を調べた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> .
+
+kgc:hasPredicate  a         owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:TargetObjProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/end_of_June>
+        a            kgc:OFobj , kgc:AbstractTime ;
+        rdfs:label   "end of June"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/end> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/June> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_second_day>
+        a           kgc:Object ;
+        rdfs:label  "the second day"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/122>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/moved> ;
+        kgc:source       "The qubit's clothes were disordered"@en , "キュービットの着衣は乱れていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/nightwear_of_Qubit> ;
+        kgc:time         "1903-08-06T14:00:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/037>
+        a                     kgc:Situation ;
+        kgc:at_the_same_time  <http://kgc.knowledge-graph.jp/data/DancingMen/038> ;
+        kgc:hasPredicate      <http://kgc.knowledge-graph.jp/data/predicate/send> ;
+        kgc:source            "Qubit sends the Letter X to Holmes"@en , "キュービットはホームズに手紙を書いた"@ja ;
+        kgc:subject           <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> , <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:time              "1903-07-29T10:00:00"^^xsd:dateTime ;
+        kgc:what              <http://kgc.knowledge-graph.jp/data/DancingMen/Letter_X> .
+
+<http://kgc.knowledge-graph.jp/data/Identity_of_Abe_Slaney>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Identity of Abe_Slaney"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Identity> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/Abe_Slaney> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/218>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/give> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "エルシィはエイブ・スレイニにお金を渡す"@ja , "Elsie hands money to Abe_Slaney"@en ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/219> ;
+        kgc:time          "1903-08-06T03:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/money> .
+
+kgc:TargetObjProperty
+        a       owl:ObjectProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_A>
+        <https://schema.org/image>  <http://kgc.knowledge-graph.jp/data/DancingMen/image/Dancing_dolls_A.png> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/194>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney claims Elsie's priority"@en , "エイブ・スレイニはエルシィの優先権を持つ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/priority_of_Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/007>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/fall> ;
+        kgc:source        "Elsie falls"@en , "そして，エルシィは卒倒した"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/Letter_Z>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Letter Z"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/draw>
+        a           kgc:Action ;
+        rdfs:label  "draw"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/164>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:source        "Holmes says the following"@en , "ホームズは以下を言った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/166> , <http://kgc.knowledge-graph.jp/data/DancingMen/165> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/079>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:source        "Maid says the followngs"@en , "女中は以下を言った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Maid> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/080> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/shutUp>
+        a           kgc:Action ;
+        rdfs:label  "shutUp"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/return>
+        a           kgc:Action ;
+        rdfs:label  "return"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/134>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/shoot> ;
+        kgc:source        "A bullet hits the window frame"@en , "弾が窓枠に当たった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Bullet> ;
+        kgc:time          "1903-08-06T03:00:00"^^xsd:dateTime ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Window_frame_of_study_room> .
+
+<http://kgc.knowledge-graph.jp/data/Meaning>
+        a           kgc:Object ;
+        rdfs:label  "Meaning"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/049>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/drawn> ;
+        kgc:source       "Two days later, Dancing dolls C are drawn in the morning"@en , "2日後の朝、踊る人形cが描かれていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_C> ;
+        kgc:then         <http://kgc.knowledge-graph.jp/data/DancingMen/050> ;
+        kgc:time         "1903-08-01T08:00:00"^^xsd:dateTime ;
+        kgc:when         <http://kgc.knowledge-graph.jp/data/DancingMen/morning_after_2_days> .
+
+<http://kgc.knowledge-graph.jp/data/New_York>
+        a           kgc:Place ;
+        rdfs:label  "New York"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/first_position_of_the_second_word_of_Sentence_H>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "first position of the second word of Sentence H"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/first_position> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_H> , <http://kgc.knowledge-graph.jp/data/DancingMen/the_second_word> , <http://kgc.knowledge-graph.jp/data/DancingMen/the_second_word_of_Sentence_H> .
+
+kgc:Talk  a              owl:Class ;
+        rdfs:subClassOf  kgc:Scene .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/104>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/dead> ;
+        kgc:source       "Qubit is dead"@en , "キュービットは死んでいた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time         "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/Norfolk>
+        a           kgc:Place ;
+        rdfs:label  "Norfolk"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/three_times>
+        a           kgc:Object ;
+        rdfs:label  "three times"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/019>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/see> ;
+        kgc:source        "Qubit see signs of the evil at the end of June"@en , "キュービットは6月の末に災いの兆しを見た"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-06-30T10:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Signs_of_evil> ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/end_of_June> .
+
+kgc:CanNotAction  a      owl:Class ;
+        rdfs:subClassOf  kgc:NotAction , kgc:CanAction .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/080>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/shoot> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Maid> ;
+        kgc:source        "Elsie shoots Qubit"@en , "エルシィがキュービットを撃った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/081> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/night>
+        a           kgc:AbstractTime ;
+        rdfs:label  "night"@en .
+
+<http://kgc.knowledge-graph.jp/data/Sentence_I>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Sentence I"@en .
+
+kgc:Place  a             owl:Class ;
+        rdfs:subClassOf  kgc:Object .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/050>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/drawn> ;
+        kgc:on           <http://kgc.knowledge-graph.jp/data/DancingMen/paper> ;
+        kgc:source       "Three days later, Dancing dolls C are drawn on paper"@en , "3日後、紙の上に踊る人形Cが描かれていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_C> ;
+        kgc:time         "1903-08-02T08:00:00"^^xsd:dateTime ;
+        kgc:when         <http://kgc.knowledge-graph.jp/data/DancingMen/3_days_later> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/stay>
+        a           kgc:Action ;
+        rdfs:label  "stay"@en .
+
+<http://kgc.knowledge-graph.jp/data/Chalk>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Chalk"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/231>
+        a                 kgc:Thought ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/write> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Elsie writes Dancing dolls J"@en , "エルシィが踊る人形を書いた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_J> .
+
+<http://kgc.knowledge-graph.jp/data/Handgun>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Handgun"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/146>
+        a         kgc:Situation ;
+        kgc:to    <http://kgc.knowledge-graph.jp/data/DancingMen/Elridge> ;
+        kgc:what  <http://kgc.knowledge-graph.jp/data/DancingMen/note> .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls_E>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Dancing dolls E"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/020>
+        a                 kgc:Situation ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/America> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/receive> ;
+        kgc:source        "Elsie receives Letter Z from US"@en , "エルシィはアメリカの手紙を受け取った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:time          "1903-06-30T10:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Letter_Z> ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/end_of_June> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/engaged>
+        a           kgc:Property ;
+        rdfs:label  "engaged"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/protect_of_Qubit>
+        a            kgc:OFobj ;
+        rdfs:label   "protect of Qubit"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/protect> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/201>
+        a                kgc:Statement ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/childhood> ;
+        kgc:infoSource   <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source       "Elsie and Abe_Slaney are childhood friends"@en , "エルシィとエイブ・スレイニは幼なじみだった"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/escape>
+        a           kgc:Action ;
+        rdfs:label  "escape"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/notKnow>
+        a           kgc:NotAction , kgc:Action ;
+        rdfs:label  "notKnow"@en ;
+        kgc:Not     <http://kgc.knowledge-graph.jp/data/predicate/know> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/116>
+        a                     kgc:Situation ;
+        kgc:at_the_same_time  <http://kgc.knowledge-graph.jp/data/DancingMen/115> ;
+        kgc:hasPredicate      <http://kgc.knowledge-graph.jp/data/predicate/feel> ;
+        kgc:source            "The maid feels the smell of gunpowder"@en , "女中は火薬のにおいを嗅いだ"@ja ;
+        kgc:time              "1903-08-06T04:02:00"^^xsd:dateTime ;
+        kgc:what              <http://kgc.knowledge-graph.jp/data/DancingMen/Smell_of_gunfire> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/receive>
+        a           kgc:Action ;
+        rdfs:label  "receive"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/092>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        kgc:middleOf      <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie_and_Qubit> ;
+        kgc:source        "Handgun falls between Qubit and Elsie"@en , "拳銃はキュービットとエルシィの間に落ちていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Handgun> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/M>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "M"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/dead>
+        a           kgc:Property ;
+        rdfs:label  "dead"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/188>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/enter> ;
+        kgc:source        "Abe_Slaney enters Qubit's home"@en , "エイブ・スレイニはキュービット宅に入った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:time          "1903-08-06T16:00:00"^^xsd:dateTime ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/home_of_Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/062>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/drawn> ;
+        kgc:source       "Dancing dolls D are drawn on the Board 2"@en , "踊る人形Dは板2に描かれていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_D> ;
+        kgc:where        <http://kgc.knowledge-graph.jp/data/DancingMen/Board_2> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/show>
+        a           kgc:Action ;
+        rdfs:label  "show"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/one_month_ago>
+        a           kgc:AbstractTime ;
+        rdfs:label  "one month ago"@en .
+
+<http://kgc.knowledge-graph.jp/data/Garden_sundial>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Garden sundial"@en .
+
+<http://kgc.knowledge-graph.jp/data/Window_frame>
+        a           kgc:Object ;
+        rdfs:label  "Window frame"@en .
+
+<http://kgc.knowledge-graph.jp/data/Smell>
+        a           kgc:Object ;
+        rdfs:label  "Smell"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/158>
+        a                 kgc:Thought ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/156> , <http://kgc.knowledge-graph.jp/data/DancingMen/154> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:source        "Dancing dolls D may be 'NEVER'"@en , "踊る人形Dはネヴァーかもしれない"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_D> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/NEVER> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/032>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notKnow> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/horse_boy> ;
+        kgc:source        "The horse boy does not know Dancing dolls"@en , "馬番の少年は踊る人形を知らない"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Horse_boy> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> .
+
+<http://kgc.knowledge-graph.jp/data/Glass_window>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Glass window"@en .
+
+kgc:when  a                 owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:SceneObjectProperty , kgc:RelationBetweenScene .
+
+<http://kgc.knowledge-graph.jp/data/At_Elridge>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "At Elridge"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/213>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Elsie talks the following to Abe_Slaney"@en , "エルシィはエイブ・スレイニに以下を言った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/215> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/gang>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "gang"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/002>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notKnow> ;
+        kgc:source        "Qubit wants to know the meaning of Dancing dolls A"@en , "キュービットは文字の意味を知りたい"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Meaning_of_Dancing_dolls_A> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/pull>
+        a           kgc:Action ;
+        rdfs:label  "pull"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/equalTo>
+        a           kgc:Action ;
+        rdfs:label  "equalTo"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_G>
+        <https://schema.org/image>  <http://kgc.knowledge-graph.jp/data/DancingMen/image/Dancing_dolls_G.png> .
+
+<http://kgc.knowledge-graph.jp/data/Board_1>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Board 1"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/see>
+        a           kgc:Action ;
+        rdfs:label  "see"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/three_characters>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "three characters"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/fireplace>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "fireplace"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/074>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/beSurprised> ;
+        kgc:source        "Holmes is surprised"@en , "ホームズは驚いた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/kill>
+        a           kgc:Action ;
+        rdfs:label  "kill"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/say>
+        a           kgc:Action ;
+        rdfs:label  "say"@en .
+
+kgc:hasPart  a              owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:TargetObjProperty .
+
+<http://kgc.knowledge-graph.jp/data/predicate/visit>
+        a           kgc:Action ;
+        rdfs:label  "visit"@en .
+
+<http://kgc.knowledge-graph.jp/data/Local_doctor>
+        a           kgc:Person ;
+        rdfs:label  "Local_doctor"@en , "Local doctor"@en .
+
+kgc:SceneProperty  a  owl:ObjectProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/evening_of_the_second_day>
+        a            kgc:OFobj , kgc:AbstractTime ;
+        rdfs:label   "evening of the second day"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/evening> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/the_second_day> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/044>
+        a                 kgc:Situation ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/station> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/come> ;
+        kgc:source        "Qubit comes from the station"@en , "キュービットは駅からやってきた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/045> ;
+        kgc:time          "1903-08-03T10:00:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/garden>
+        a           kgc:Place ;
+        rdfs:label  "garden"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_second_morning>
+        a           kgc:AbstractTime ;
+        rdfs:label  "the second morning"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/225>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/shoot> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney shoot Kubit"@en , "エイブ・スレイニはキュービットを撃った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/226> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/last_Tuesday>
+        a           kgc:AbstractTime ;
+        rdfs:label  "last Tuesday"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/investigation>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "investigation"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/open>
+        a           kgc:Action ;
+        rdfs:label  "open"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/banknote>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "banknote"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/014>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/notKnow> ;
+        kgc:source        "Qubit does not know Elsie's past"@en , "キュービットはエルシィの過去を知らない"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Past_of_Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/Pebble_of_sundial>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Pebble of sundial"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Pebble> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/sundial> .
+
+<http://kgc.knowledge-graph.jp/data/evil>
+        a           kgc:Object ;
+        rdfs:label  "evil"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/171>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "The character C2 at the first position of the second word of Sentence H is H"@en , "文章Hの2つ目の単語の最初の文字C2はHである"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Character_C2> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/H> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/first_position_of_the_second_word_of_Sentence_H> .
+
+kgc:from  a                 owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/086>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/wellUnderstood> ;
+        kgc:source       "Martin is well understood"@en , "マーティン警部は物分かりが良い"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Martin> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/sent>
+        a           kgc:Action ;
+        rdfs:label  "sent"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/write>
+        a           kgc:Action ;
+        rdfs:label  "write"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/walk>
+        a           kgc:Action ;
+        rdfs:label  "walk"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/beShot>
+        a           kgc:Action ;
+        rdfs:label  "beShot"@en .
+
+<http://kgc.knowledge-graph.jp/data/Chicago>
+        a           kgc:Place ;
+        rdfs:label  "Chicago"@en .
+
+<http://kgc.knowledge-graph.jp/data/ELSIE>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "ELSIE"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/tube>
+        a           kgc:Object ;
+        rdfs:label  "tube"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/141>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:source        "The flower bed has male footprints"@en , "花壇には、男性の足跡がついていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/flower_bed> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/male_footprints> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/173c>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "The Sentence I is 'A? ELRI?ES'"@en , "文章Iは'A? ELRI?ES'である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_I> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/A?_ELRI?ES> .
+
+kgc:RelationBetweenScene
+        a       owl:ObjectProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/056>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/return> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:source        "Qubit returns to bedroom"@en , "キュービットは寝室に帰る"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Bedroom> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/room>
+        a           kgc:Place ;
+        rdfs:label  "room"@en .
+
+kgc:at_the_same_time  a     owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:RelationBetweenScene .
+
+<http://kgc.knowledge-graph.jp/data/predicate/come>
+        a           kgc:Action ;
+        rdfs:label  "come"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/ask>
+        a           kgc:Action ;
+        rdfs:label  "ask"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/111>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/wear> ;
+        kgc:source        "Elsie wears casual wear"@en , "エルシィは普段着だった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/casual_wear> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/notDead>
+        a           kgc:Property ;
+        rdfs:label  "notDead"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/father_of_Elsie>
+        a            kgc:OFobj , kgc:Person ;
+        rdfs:label   "father of Elsie"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/father> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/026>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/follow> ;
+        kgc:source        "Qubit follows the promise"@en , "キュービットは約束に従った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/027> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/promise> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/need>
+        a           kgc:Action ;
+        rdfs:label  "need"@en .
+
+<http://kgc.knowledge-graph.jp/data/H>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "H"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/207>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/send> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney writes the Letter Z to Elsie"@en , "エイブ・スレイニはエルシィに手紙を出した"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> , <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/208> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Letter_Z> .
+
+<http://kgc.knowledge-graph.jp/data/Charactor_C1>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Charactor C1"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/first_position>
+        a           kgc:Object ;
+        rdfs:label  "first position"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/183>
+        a                 kgc:Situation ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/Persuasion> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/change> ;
+        kgc:source        "The message of Abe_Slaney changes from persuasion to threat"@en , "エイブ・スレイニの伝言は説得から脅しに変わった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Message_of_Abe_Slaney> ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/Threat> .
+
+<http://kgc.knowledge-graph.jp/data/Persuasion>
+        a           kgc:Object ;
+        rdfs:label  "Persuasion"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/similar_to_mischief>
+        a           kgc:Object ;
+        rdfs:label  "similar to mischief"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/have>
+        a           kgc:Action ;
+        rdfs:label  "have"@en .
+
+<http://kgc.knowledge-graph.jp/data/S>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "S"@en .
+
+<http://kgc.knowledge-graph.jp/data/Meaning_of_Dancing_dolls_A>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Meaning of Dancing dolls A"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Meaning> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/Dancing_dolls_A> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_fourth_position>
+        a           kgc:Place ;
+        rdfs:label  "the fourth position"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/153>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:how           <http://kgc.knowledge-graph.jp/data/DancingMen/four_times> ;
+        kgc:source        "Dancing dolls A contains Dancing Dolls F four times"@en , "踊る人形Aは踊る人形Fを4回持つ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_A> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_F> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/fall>
+        a           kgc:Action ;
+        rdfs:label  "fall"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/068>
+        a                     kgc:Situation ;
+        kgc:at_the_same_time  <http://kgc.knowledge-graph.jp/data/DancingMen/069> ;
+        kgc:hasPredicate      <http://kgc.knowledge-graph.jp/data/predicate/beHappy> ;
+        kgc:source            "Holmes is happy"@en , "ホームズは喜んだ"@ja ;
+        kgc:subject           <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> .
+
+kgc:NotAction  a         owl:Class ;
+        rdfs:subClassOf  kgc:Action .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/123>
+        a                 kgc:Situation ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/front> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/beShot> ;
+        kgc:source        "Qubit shoot his heart from the front"@en , "キュービットは正面から心臓を撃たれた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/heart> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/038>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/sent> ;
+        kgc:source        "Qubit sends a dancing doll to Holmes"@en , "キュービットは踊る人形をホームズに送った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> , <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/169a>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> , <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:how           <http://kgc.knowledge-graph.jp/data/DancingMen/three_times> ;
+        kgc:source        "The Sentece H has charactor C1 three times"@en , "文章Hは文字C1を三回持つ"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_H> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/?M_?ERE_??E_SL?NE?> , <http://kgc.knowledge-graph.jp/data/DancingMen/Charactor_C1> .
+
+<http://kgc.knowledge-graph.jp/data/Shadow_of_storeroom>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Shadow of storeroom"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Shadow> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/storeroom> .
+
+<http://kgc.knowledge-graph.jp/data/American>
+        a           kgc:Property ;
+        rdfs:label  "American"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/219>
+        a                 kgc:Statement ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/getAngry> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney get angry"@en , "エイブ・スレイニは怒った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/220> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_B>
+        <https://schema.org/image>  <http://kgc.knowledge-graph.jp/data/DancingMen/image/Dancing_dolls_B.png> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/195>
+        a                 kgc:Statement ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/escape> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Elsie escapes from Abe_Slaney"@en , "エルシィはエイブ・スレイニから逃げた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/008>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/drawn> ;
+        kgc:how          <http://kgc.knowledge-graph.jp/data/DancingMen/pencil> ;
+        kgc:source       "Dancing dolls A are drawn with a pencil"@en , "踊る人形aが鉛筆で描かれていた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_A> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/smoke>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "smoke"@en .
+
+kgc:where  a                owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/165>
+        a                 kgc:Statement ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/161> , <http://kgc.knowledge-graph.jp/data/DancingMen/160> , <http://kgc.knowledge-graph.jp/data/DancingMen/162> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/include> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:source        "The Dancing dolls X includes 'L', 'S', and 'I'"@en , "踊る人形Xは'L'、'S'、'I'を含む"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_X> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/L> , <http://kgc.knowledge-graph.jp/data/DancingMen/S> , <http://kgc.knowledge-graph.jp/data/DancingMen/I> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/exist>
+        a           kgc:Action ;
+        rdfs:label  "exist"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/moved>
+        a           kgc:Property ;
+        rdfs:label  "moved"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/most_often>
+        a           kgc:Object ;
+        rdfs:label  "most often"@en .
+
+<http://kgc.knowledge-graph.jp/data/Traces_of_bullets>
+        a            kgc:OFobj , kgc:PhysicalObject ;
+        rdfs:label   "Traces of bullets"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/Traces> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/bullets> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/220>
+        a                 kgc:Statement ;
+        kgc:from          <http://kgc.knowledge-graph.jp/data/DancingMen/window_of_study_room> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/pull> ;
+        kgc:infoSource    <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:source        "Abe_Slaney tries to pull Elsie from the window"@en , "エイブ・スレイニはエルシィを窓から引きずり落そうとした"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:then          <http://kgc.knowledge-graph.jp/data/DancingMen/222> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_X>
+        <https://schema.org/image>  <http://kgc.knowledge-graph.jp/data/DancingMen/image/Dancing_dolls_X.png> .
+
+kgc:AbstractTime  a  owl:Class .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/135>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/exist> ;
+        kgc:on            <http://kgc.knowledge-graph.jp/data/DancingMen/desk_of_study_room> ;
+        kgc:source        "There is a handbag on the desk of the study"@en , "書斎の机にハンドバッグがあった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/handbag> ;
+        kgc:time          "1903-08-06T14:00:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/predicate/understandable>
+        a           kgc:Property ;
+        rdfs:label  "understandable"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/character>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "character"@en .
+
+<http://kgc.knowledge-graph.jp/data/Alphabet>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Alphabet"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/105>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/sit> ;
+        kgc:nextTo        <http://kgc.knowledge-graph.jp/data/DancingMen/window> ;
+        kgc:source        "Elsie sits by the window"@en , "エルシィが窓のそばでうずくまっていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:time          "1903-08-06T04:02:00"^^xsd:dateTime .
+
+<http://kgc.knowledge-graph.jp/data/predicate/send>
+        a           kgc:Action ;
+        rdfs:label  "send"@en .
+
+<http://kgc.knowledge-graph.jp/data/Norwich>
+        a           kgc:Place ;
+        rdfs:label  "Norwich"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/081>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/shoot> ;
+        kgc:source        "Elsie shoots herself"@en , "エルシィは自分を撃った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Elsie> .
+
+<http://kgc.knowledge-graph.jp/data/A?_ELRI?ES>
+        a           kgc:Object ;
+        rdfs:label  "A? ELRI?ES"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/the_second_word_of_Sentence_H>
+        a            kgc:OFobj ;
+        rdfs:label   "the second word of Sentence H"@en ;
+        kgc:ofPart   <http://kgc.knowledge-graph.jp/data/DancingMen/the_second_word> ;
+        kgc:ofWhole  <http://kgc.knowledge-graph.jp/data/DancingMen/Sentence_H> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/177>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/send> ;
+        kgc:source        "Holmes telegraphs to Willson"@en , "ホームズはウィルスンに電報を打った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Willson> , <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/telegram> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/051>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/stand> ;
+        kgc:source        "Dancing dolls C are standing on the pebbles of a sundial"@en , "踊る人形Cは日時計の小石に立てかけてあった"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_C> ;
+        kgc:where         <http://kgc.knowledge-graph.jp/data/DancingMen/Pebble_of_sundial> .
+
+<http://kgc.knowledge-graph.jp/data/Am_Here_Abe_Slaney>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Am Here Abe Slaney"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/147>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:how           <http://kgc.knowledge-graph.jp/data/DancingMen/similar_to_mischief> ;
+        kgc:source        "Dancing dolls is a cipher that mimics children's mischief"@en , "踊る人形は子供のいたずらに似せた暗号である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/cipher> .
+
+kgc:CanAction  a         owl:Class ;
+        rdfs:subClassOf  kgc:Action .
+
+<http://kgc.knowledge-graph.jp/data/Dancing_dolls_F>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "Dancing dolls F"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/021>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/have> ;
+        kgc:source        "The Letter Z has an American postmark"@en , "手紙はアメリカの消印を持っていた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Letter_Z> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/American_postmark> .
+
+<http://kgc.knowledge-graph.jp/data/American_postmark>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "American postmark"@en .
+
+<http://kgc.knowledge-graph.jp/data/C>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "C"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/small>
+        a           kgc:Property ;
+        rdfs:label  "small"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/male_footprints>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "male footprints"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/117>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/small> ;
+        kgc:source       "The study room is small"@en , "書斎は小さい部屋である"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Study_room> .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/June>
+        a           kgc:Object ;
+        rdfs:label  "June"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/093>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/visit> ;
+        kgc:source        "A local doctor visited at 4 am"@en , "地元の医者は4時に訪れた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Local_doctor> ;
+        kgc:time          "1903-08-06T04:00:00"^^xsd:dateTime ;
+        kgc:when          <http://kgc.knowledge-graph.jp/data/DancingMen/4_00> .
+
+<http://kgc.knowledge-graph.jp/data/N>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "N"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/three_sides>
+        a           kgc:Object ;
+        rdfs:label  "three sides"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/window>
+        a           kgc:PhysicalObject ;
+        rdfs:label  "window"@en .
+
+<http://kgc.knowledge-graph.jp/data/predicate/beHappy>
+        a           kgc:Action ;
+        rdfs:label  "beHappy"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/189>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/point> ;
+        kgc:source        "Holmes pointed a gun at Abe_Slaney"@en , "ホームズはエイブ・スレイニに拳銃を向けた"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Holmes> ;
+        kgc:time          "1903-08-06T16:00:00"^^xsd:dateTime ;
+        kgc:to            <http://kgc.knowledge-graph.jp/data/DancingMen/Abe_Slaney> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/Handgun> .
+
+<http://kgc.knowledge-graph.jp/data/predicate/force>
+        a           kgc:Action ;
+        rdfs:label  "force"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/063>
+        a                 kgc:Situation ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/say> ;
+        kgc:source        "Qubit says the followng"@en , "キュービットは以下を言った"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Qubit> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/064> .
+
+<http://kgc.knowledge-graph.jp/data/Identity>
+        a           kgc:Object ;
+        rdfs:label  "Identity"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/cryptography>
+        a           kgc:Object ;
+        rdfs:label  "cryptography"@en .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/159>
+        a                 kgc:Situation ;
+        kgc:because       <http://kgc.knowledge-graph.jp/data/DancingMen/158> ;
+        kgc:hasPredicate  <http://kgc.knowledge-graph.jp/data/predicate/equalTo> ;
+        kgc:source        "Dancing dolls G is 'N', 'V', and 'R'"@en , "踊る人形Gは'N'、'V'、'R'である"@ja ;
+        kgc:subject       <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls_G> ;
+        kgc:what          <http://kgc.knowledge-graph.jp/data/DancingMen/V> , <http://kgc.knowledge-graph.jp/data/DancingMen/R> , <http://kgc.knowledge-graph.jp/data/DancingMen/N> .
+
+kgc:around  a               owl:ObjectProperty ;
+        rdfs:subPropertyOf  kgc:LocationProperty .
+
+<http://kgc.knowledge-graph.jp/data/DancingMen/033>
+        a                kgc:Situation ;
+        kgc:hasProperty  <http://kgc.knowledge-graph.jp/data/predicate/drawn> ;
+        kgc:source       "Dancing dolls are drawn at night"@en , "踊る人形は夜に描かれた"@ja ;
+        kgc:subject      <http://kgc.knowledge-graph.jp/data/DancingMen/Dancing_dolls> ;
+        kgc:time         "1903-07-23T02:00:00"^^xsd:dateTime ;
+        kgc:when         <http://kgc.knowledge-graph.jp/data/DancingMen/night> .
+
+<http://kgc.knowledge-graph.jp/data/One_minute_after_gunfire>
+        a           kgc:Object ;
+        rdfs:label  "One minute after gunfire"@en .
