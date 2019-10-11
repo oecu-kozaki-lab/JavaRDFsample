@@ -9,21 +9,27 @@ import org.apache.jena.rdf.model.ModelFactory;
 public class readRDF {
 
 	static public void main(String[] args) throws FileNotFoundException{
+	//RDFを操作する為のModelを作成
 		Model model = ModelFactory.createDefaultModel() ;
 
 
 		File file = new File("input/DancingMen.ttl");//読み込むRDFファイルを指定
 		System.out.println(file.getName()+"...");
-		String ftype = ".ttl";
+		
 
-//読み込むRDFの形式に応じて，選択
+	//RDFの形式を指定して読み込む
 //		model.read(file.getAbsolutePath(), "RDF") ;
 //		model.read("input/IOBC_jp_label.nt","N-TRIPLE") ;
 		model.read(file.getAbsolutePath(), "TURTLE") ;
 
-//読み込んだRDFをそのまま
+	//読み込んだRDFの形式を変換して保存する
 		FileOutputStream out;
-
+		out = new FileOutputStream("output/sampleOUTPUT.nt");
+		model.write(out,  "N-TRIPLE");
+		
+	/* 元のファイル名の拡張子を変えて保存したいときのサンプル
+	 
+		String ftype = ".ttl"; //元の拡張子
 		out = new FileOutputStream("output/"+file.getName().replaceAll(ftype, ".ttl"));
 		model.write(out,  "TURTLE");
 
@@ -32,7 +38,7 @@ public class readRDF {
 
 		out = new FileOutputStream("output/"+file.getName().replaceAll(ftype, ".nt"));
 		model.write(out,  "N-TRIPLE");
-
+		*/
 
 
 	}
