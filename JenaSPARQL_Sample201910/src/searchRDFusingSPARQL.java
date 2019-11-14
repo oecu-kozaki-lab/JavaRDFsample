@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
@@ -10,12 +11,6 @@ import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.rdf.model.Property;
-import org.apache.jena.rdf.model.RDFNode;
-import org.apache.jena.rdf.model.ResIterator;
-import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.rdf.model.Statement;
-import org.apache.jena.rdf.model.StmtIterator;
 
 
 public class searchRDFusingSPARQL {
@@ -48,6 +43,7 @@ public class searchRDFusingSPARQL {
         //クエリの実行
         QueryExecution qexec = QueryExecutionFactory.create(query, model);
 
+     	try {
 
         FileOutputStream out;
 		out = new FileOutputStream("output/SPARQL-output.txt");
@@ -61,6 +57,10 @@ public class searchRDFusingSPARQL {
      	//ResultSetFormatter.outputAsCSV(System.out, rs);	//CSV形式で，標準出力に
      	//ResultSetFormatter.outputAsCSV(out, rs);			//CSV形式で，ファイルに
 
+			out.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 	}
 }
