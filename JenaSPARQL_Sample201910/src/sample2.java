@@ -41,18 +41,21 @@ public class sample2 {
 		ArrayList<Resource> subjects = getSubjectByScene(model, sceneURI);
 
 		//クエリ結果を使って別クエリを発行するコードを以下に書く
-
+		for(Resource sub : subjects){
+			ArrayList<Resource> scenes = getSceneBySubject(model, "<"+sub.toString()+">");
+			}
 
 	}
 
+
 	//指定した場面の「subject（動作主）」を取得する
 	static ArrayList<Resource> getSubjectByScene(Model model, String sceneURI) {
-		System.out.println(sceneURI+"の「subject（動作主）」を取得する");
+		System.out.println("*** "+sceneURI+"の「subject（動作主）」を取得する");
 
 		//クエリの作成
 		String queryStr = "select ?o\r\n" +
 				"{"+sceneURI + "<http://kgc.knowledge-graph.jp/ontology/kgc.owl#subject> ?o .}";
-        Query query = QueryFactory.create(queryStr);
+	    Query query = QueryFactory.create(queryStr);
 
         //クエリの実行
         QueryExecution qexec = QueryExecutionFactory.create(query, model);
@@ -74,4 +77,37 @@ public class sample2 {
 
 		return subjects;
 	}
+
+
+	//指定した人物が「subject（動作主）の場面」を取得する
+		static ArrayList<Resource> getSceneBySubject(Model model, String subjectURI) {
+			System.out.println("*** 「subject（動作主）」が"+subjectURI+"の「場面」を取得する");
+
+			//クエリの作成
+			String queryStr = "select ?s\r\n" +
+					"{?s <http://kgc.knowledge-graph.jp/ontology/kgc.owl#subject> "+subjectURI+" .}";
+	        Query query = QueryFactory.create(queryStr);
+
+	        //クエリの実行
+	        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+
+	     	// クエリの実行.
+	        ResultSet rs = qexec.execSelect();
+
+	        ArrayList<Resource> scenes = new ArrayList<Resource> ();
+
+	        while(rs.hasNext()) {
+	        	QuerySolution qs = rs.next();
+	        	Resource  res = qs.getResource("s");
+	        	if(res!=null) {
+	        		scenes.add(res);
+	        		System.out.println(res.toString());
+	        	}
+	        }
+
+
+			return scenes;
+		}
+
+
 }
