@@ -1,9 +1,11 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
@@ -30,15 +32,20 @@ public class mappingWithWikidataBySPARQL {
 
 		//読み込むファイルを指定
 		File file = new File("input/words.txt");
+		File fileOUT = new File("mappingWikidata-output3.txt");
 
 		try {
 			//ファイルの読み込み用のReaderの設定
 			BufferedReader br = new BufferedReader(	new InputStreamReader(new FileInputStream(file),"UTF8"));
 
-			 //出力用のファイルの作成
-	        FileOutputStream out;
-			out = new FileOutputStream("output/mappingWikidata-output.txt");
+			//出力用のファイルのWiterの設定
+//	        FileOutputStream out;
+//			out = new FileOutputStream("output/mappingWikidata-output2.txt");
+			FileOutputStream out = new FileOutputStream(fileOUT);
+			OutputStreamWriter ow = new OutputStreamWriter(out, "UTF-8");
+			BufferedWriter bw = new BufferedWriter(ow);
 
+			bw.write("TEST");
 
 			while(br.ready()) {
 				String line = br.readLine(); //ファイルを1行ずつ読み込む
@@ -52,17 +59,19 @@ public class mappingWithWikidataBySPARQL {
 				// クエリの実行
 				Query query = QueryFactory.create(queryStr);
 				QueryExecution qexec = QueryExecutionFactory.sparqlService("http://kozaki-lab.osakac.ac.jp/agraph/wikidata_nearly_full"	, query) ;
-	            
+
 				//	QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org/sparql"	, query) ;
 	            ((QueryEngineHTTP)qexec).addParam("timeout", "10000") ;
 		        ResultSet rs = qexec.execSelect();
-		        
+
 		        while(rs.hasNext()) {
 		        	QuerySolution qs = rs.next();
 		        	Resource  res = qs.getResource("s");
 		        	if(res!=null) {
 		        		//subjects.add(res);
-		        		System.out.println(res.toString());
+		        		//System.out.println(res.toString());
+
+		        		bw.write(line+" <http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata> <"+res.toString()+"> . \n");
 		        	}
 		        }
 
@@ -74,7 +83,7 @@ public class mappingWithWikidataBySPARQL {
 
 			}
 
-
+			br.close();
 
 	     	out.close();
 
