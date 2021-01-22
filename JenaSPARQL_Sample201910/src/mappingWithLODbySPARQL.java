@@ -17,7 +17,7 @@ import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
 
 
-/* SPARQL Endpoint へのクエリをもちいたWikidataとのマッピング例
+/* Endpoint へのSPARQLクエリをもちいたWikidataとのマッピング例
  *
  * 注）Proxyの設定が必要な環境で実行するときは，実行時のJVMのオプションとして
  *      -DproxySet=true -DproxyHost=wwwproxy.osakac.ac.jp -DproxyPort=8080
@@ -26,72 +26,80 @@ import org.apache.jena.sparql.engine.http.QueryEngineHTTP;
  * /
  */
 
-public class mappingWithWikidataBySPARQL {
+public class mappingWithLODbySPARQL {
 
 	static public void main(String[] args) throws FileNotFoundException{
 
-		//読み込むファイルを指定
-		File file = new File("input/words.txt");
-		File fileOUT = new File("mappingWikidata-output3.txt");
-
 		try {
+			//入力ファイル指定
+			File file = new File("input/words.txt");
 			//ファイルの読み込み用のReaderの設定
 			BufferedReader br = new BufferedReader(	new InputStreamReader(new FileInputStream(file),"UTF8"));
 
+			//出力ファイル指定
+			File fileOUT = new File("output/mappingLOD-output.ttl");
 			//出力用のファイルのWiterの設定
-//	        FileOutputStream out;
-//			out = new FileOutputStream("output/mappingWikidata-output2.txt");
 			FileOutputStream out = new FileOutputStream(fileOUT);
 			OutputStreamWriter ow = new OutputStreamWriter(out, "UTF-8");
 			BufferedWriter bw = new BufferedWriter(ow);
-
-			bw.write("TEST");
 
 			while(br.ready()) {
 				String line = br.readLine(); //ファイルを1行ずつ読み込む
 				System.out.println(line);
 
 				//クエリの作成
-				//String queryStr = "select distinct ?s where{?s ?p ?o.}LIMIT 10";
 				String queryStr = "select ?s where{?s <http://www.w3.org/2000/01/rdf-schema#label> \""+line+"\"@ja.}LIMIT 10";
-				//String queryStr = "select * where{?s ?p ?o.}LIMIT 100";
+				//String queryStr = "select ?s where{?s <http://www.w3.org/2000/01/rdf-schema#label> \""+line+"\"@ja.}LIMIT 10";
+				/*「一致条件」を変更するには，ここのクエリを変えると良い*/
+
 
 				// クエリの実行
+				// Wikidata公式Endpointで試すとhttps関係でエラーが出るため，研究室内の複製版を使用している
+				//  →原因は調査中
 				Query query = QueryFactory.create(queryStr);
-				QueryExecution qexec = QueryExecutionFactory.sparqlService("http://kozaki-lab.osakac.ac.jp/agraph/wikidata_nearly_full"	, query) ;
+				QueryExecution qexec = QueryExecutionFactory.sparqlService("https://dbpedia.org/sparql"	, query) ;
+				/* Wikidata の場合（途中で止まる？）
+				QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org//sparql"	, query) ;
+				*/
 
 				//	QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org/sparql"	, query) ;
 	            ((QueryEngineHTTP)qexec).addParam("timeout", "10000") ;
 		        ResultSet rs = qexec.execSelect();
 
+		        int n=0;
 		        while(rs.hasNext()) {
 		        	QuerySolution qs = rs.next();
 		        	Resource  res = qs.getResource("s");
 		        	if(res!=null) {
-		        		//subjects.add(res);
-		        		//System.out.println(res.toString());
+		        		//入力したwordの出力
+		        		if(n==0) {
+		        			bw.write(line+"\t");
+		        		}
 
-		        		bw.write(line+" <http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata> <"+res.toString()+"> . \n");
+		        		//マッピング情報の出力
+		        		bw.write("<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>\t<"+res.toString()+">");
+		        		/* マッピング情報を表すために，独自プロパティを導入
+		        		 * →必要ならば使用するプロパティを変えても良い　　　　 */
+
+
+		        		//マッピング先が複数の場合は，「;」でつなぐ．最後は「.」
+		        		if(rs.hasNext()) {
+		        			bw.write(" ; ");
+		        		}else {
+		        			bw.write(" . \n");
+		        		}
+		        		n++;
 		        	}
 		        }
 
-		        // 結果の出力　※以下のどれか「１つ」を選ぶ（複数選ぶと，2つ目以降の結果が「空」になる）
-		     	//ResultSetFormatter.out(System.out, rs, query);		//表形式で，標準出力に
-		     	//ResultSetFormatter.out(out, rs, query); 			//表形式で，ファイルに
-		     	//ResultSetFormatter.outputAsCSV(System.out, rs);	//CSV形式で，標準出力に
-		     	//ResultSetFormatter.outputAsCSV(out, rs);			//CSV形式で，ファイルに
-
 			}
 
+			//入出力のストリームを閉じる【これを忘れると，ファイル処理が正しく終わらない】
 			br.close();
-
-	     	out.close();
+	     	bw.close();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
-
 	}
 }

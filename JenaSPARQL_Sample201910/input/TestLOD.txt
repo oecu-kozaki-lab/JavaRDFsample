@@ -1,0 +1,11 @@
+大阪電気通信大学	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Osaka_Electro-Communication_University> .
+寝屋川市	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Neyagawa,_Osaka> .
+日本	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Japan> .
+ボブ・サップ	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Bob_Sapp> .
+ロシア語	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Russian_language> .
+城	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Castle> ; <http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/ontology/Castle> ; <http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/ontology/Castle> .
+大統領府	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Office_of_the_President> .
+織田信長	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Oda_Nobunaga> .
+豊臣秀吉	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Toyotomi_Hideyoshi> .
+徳川家康	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Tokugawa_Ieyasu> .
+タモリ	<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>	<http://dbpedia.org/resource/Tamori> .
