@@ -28,7 +28,7 @@ public class searchRDFfromSPARQLendpoint {
 
 		 // Remote execution.
         try{
-        	QueryExecution qexec = QueryExecutionFactory.sparqlService("http://lod.hozo.jp/repositories/kgc2019"	, query) ;
+        	QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org/sparql"	, query) ;
             ((QueryEngineHTTP)qexec).addParam("timeout", "10000") ;
 
             //出力用のファイルの作成
