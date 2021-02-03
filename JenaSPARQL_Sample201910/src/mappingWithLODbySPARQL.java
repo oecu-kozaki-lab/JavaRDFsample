@@ -57,7 +57,9 @@ public class mappingWithLODbySPARQL {
 				// Wikidata公式Endpointで試すとhttps関係でエラーが出るため，研究室内の複製版を使用している
 				//  →原因は調査中
 				Query query = QueryFactory.create(queryStr);
-				QueryExecution qexec = QueryExecutionFactory.sparqlService("https://dbpedia.org/sparql"	, query) ;
+				QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org//sparql"	, query) ;
+
+				//QueryExecution qexec = QueryExecutionFactory.sparqlService("https://dbpedia.org/sparql"	, query) ;
 				/* Wikidata の場合（途中で止まる？）
 				QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org//sparql"	, query) ;
 				*/
@@ -91,6 +93,8 @@ public class mappingWithLODbySPARQL {
 		        		n++;
 		        	}
 		        }
+
+		        qexec.close();//これがないと，途中でクエリの応答がしなくなるので注意！
 
 			}
 
