@@ -1,8 +1,11 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -51,48 +54,56 @@ public class readRDFnedo {
 
 
 		try {
-			//File f = new File("F:/latest-truthy.nt");
+			File f = new File("F:/Wikidata_full_201013/latest-truthy_201013.nt");
 			BufferedReader br = new BufferedReader(
-					new InputStreamReader(new FileInputStream(file),"UTF-8"));
+					new InputStreamReader(new FileInputStream(f),"SJIS"));
 			String line="";
-//			File saveFile = new File("F:/wikidata_min_20200306.nt");//""+f.getName().replaceAll(".tsv", "")+".ttl");
 
-//			FileOutputStream out;
-//			out = new FileOutputStream(saveFile);
-//			OutputStreamWriter ow = new OutputStreamWriter(out, "UTF-8");
-//			BufferedWriter bw = new BufferedWriter(ow);
+			File saveFile = new File("F:/nedo_relation_201013test.nt");//""+f.getName().replaceAll(".tsv", "")+".ttl");
+			FileOutputStream out;
+			out = new FileOutputStream(saveFile);
+			OutputStreamWriter ow = new OutputStreamWriter(out, "UTF-8");
+			BufferedWriter bw = new BufferedWriter(ow);
 
-//			int i=0;
-//			int c=0;
+			int i=0;
+			int hit=0;
 
 			long st_time = System.currentTimeMillis();
 
 			//ファイルを1行ずつ読み込んで処理する
-			//10:45 -> 12:11 約1時間半かかった
 			while(br.ready()) {
 				line = br.readLine();
 				String[] data = line.split(" ");
 
-				Resource res = model.getResource(data[0]);
-				if(res != null) {
-					System.out.println(res.toString()+":::OK!");
+				Resource res_s =  model.getResource(data[0].replace("<","").replace(">",""));
+				Resource res_o = model.getResource(data[2].replace("<","").replace(">",""));
+				
+				if((model.containsResource(res_s)) || model.containsResource(res_o)) {
+					bw.write(line+"\n");
+					hit++;
 				}
-//				if(line.contains("<http://www.wikidata.org/prop/direct/P279>")==true){
-//					//bw.write(line+"\n");
-//					c++;
-//				}
+
+				i++;
+
+				if(i%10000==0) {
+					System.out.println("..."+hit+"/"+i);
+				}
+
 			}
 
 
 			System.out.print("読み込み所要時間（ミリ秒）：");
 			System.out.println(lded_time-ld_time);
 
+			br.close();
+			bw.close();
+
 			long ed_time = System.currentTimeMillis();
 			System.out.print("所要時間（ミリ秒）：");
 			System.out.println(ed_time-st_time);
 		}
 		catch(Exception e) {
-
+			System.out.println(e);
 		}
 
 	}
