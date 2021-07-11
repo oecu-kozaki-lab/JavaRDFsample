@@ -49,50 +49,39 @@ public class mappingWithLODbySPARQL {
 
 				//クエリの作成
 				String queryStr = "select ?s where{?s <http://www.w3.org/2000/01/rdf-schema#label> \""+line+"\"@ja.}LIMIT 10";
-				//String queryStr = "select ?s where{?s <http://www.w3.org/2000/01/rdf-schema#label> \""+line+"\"@ja.}LIMIT 10";
 				/*「一致条件」を変更するには，ここのクエリを変えると良い*/
 
 
 				// クエリの実行
-				// Wikidata公式Endpointで試すとhttps関係でエラーが出るため，研究室内の複製版を使用している
-				//  →原因は調査中
 				Query query = QueryFactory.create(queryStr);
-				QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org//sparql"	, query) ;
+				QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org/sparql"	, query) ;
+    		            	((QueryEngineHTTP)qexec).addParam("timeout", "10000") ;
+			    	ResultSet rs = qexec.execSelect();
 
-				//QueryExecution qexec = QueryExecutionFactory.sparqlService("https://dbpedia.org/sparql"	, query) ;
-				/* Wikidata の場合（途中で止まる？）
-				QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org//sparql"	, query) ;
-				*/
+				int n=0;
+				while(rs.hasNext()) {
+					QuerySolution qs = rs.next();
+					Resource  res = qs.getResource("s");
+					if(res!=null) {
+						//入力したwordの出力
+						if(n==0) {
+							bw.write(line+"\t");
+						}
 
-				//	QueryExecution qexec = QueryExecutionFactory.sparqlService("https://query.wikidata.org/sparql"	, query) ;
-	            ((QueryEngineHTTP)qexec).addParam("timeout", "10000") ;
-		        ResultSet rs = qexec.execSelect();
+						//マッピング情報の出力
+						bw.write("<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>\t<"+res.toString()+">");
+						/* マッピング情報を表すために，独自プロパティを導入
+						 * →必要ならば使用するプロパティを変えても良い　　　　 */
 
-		        int n=0;
-		        while(rs.hasNext()) {
-		        	QuerySolution qs = rs.next();
-		        	Resource  res = qs.getResource("s");
-		        	if(res!=null) {
-		        		//入力したwordの出力
-		        		if(n==0) {
-		        			bw.write(line+"\t");
-		        		}
-
-		        		//マッピング情報の出力
-		        		bw.write("<http://kozaki-lab.osakac.ac.jp/kg/prop/mappingToWikidata>\t<"+res.toString()+">");
-		        		/* マッピング情報を表すために，独自プロパティを導入
-		        		 * →必要ならば使用するプロパティを変えても良い　　　　 */
-
-
-		        		//マッピング先が複数の場合は，「;」でつなぐ．最後は「.」
-		        		if(rs.hasNext()) {
-		        			bw.write(" ; ");
-		        		}else {
-		        			bw.write(" . \n");
-		        		}
-		        		n++;
-		        	}
-		        }
+						//マッピング先が複数の場合は，「;」でつなぐ．最後は「.」
+						if(rs.hasNext()) {
+							bw.write(" ; ");
+						}else {
+							bw.write(" . \n");
+						}
+						n++;
+					}
+				}
 
 		        qexec.close();//これがないと，途中でクエリの応答がしなくなるので注意！
 
@@ -102,8 +91,8 @@ public class mappingWithLODbySPARQL {
 			br.close();
 	     	bw.close();
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        	} catch (Exception e) {
+            		e.printStackTrace();
+        	}
 	}
 }
